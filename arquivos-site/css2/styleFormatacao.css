@@ -1,0 +1,354 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+/* CLASSES GLOBAIS DO SITE */
+.centerObject {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*CLASSES DO MENU*/
+
+.centerOneLine {
+    padding-top: 18px
+}
+
+.centerTwoLines {
+    padding-top: 10px;
+}
+
+.centerThreeLines {
+    padding-top: 2px;
+}
+
+.menu {
+    background-color: black;
+    text-align: center;
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li {
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu ul li:hover {
+    background-color: #5f9ea0;
+    border-radius: 3px;
+}
+
+.sub-menu1, .sub-menu2 {
+    display: none;
+}
+
+.menu ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.menu ul li:hover .align-margin {
+    margin-top: 11px;
+}
+
+.menu ul li:hover .align-margin2 {
+    margin-top: 20px;
+}
+
+.menu ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu1 ul li {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .width ul li {
+    width: 170px;
+}
+
+.menu ul li ul li:hover .sub-menu2 {
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    margin-top: -30px;
+    background-color: black;
+}
+
+.menu .fa {
+    margin-right: 8px;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+
+/*.menuContainer ul li:hover .sub-menu1 ul li a:hover {
+    color: aqua;
+}*/
+/*CLASSES DO MENU*/
+
+
+
+/*CLASSES GLOBAIS*/
+
+.texto {
+    font-family: arial;
+    font-size: 25px;
+    
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+    
+    color: #ffffff;
+    
+    line-height: 1.5;
+    
+    text-align: justify;
+}
+
+h1{
+    font-family: "Times new roman";
+    font-size: 30px;
+    
+    padding-left: 5px;
+    
+    line-height: 1.5;
+    
+    color: white;
+    
+    text-align: center;
+    
+    border-bottom: solid 2px #5F9EA0;
+    border-top: solid 2px #5F9EA0;
+}
+
+h2{
+    font-family: "Times new roman";
+    font-size: 28px;
+    
+    padding-left: 5px;
+    padding-top: 3px;
+    
+    line-height: 1.5;
+    
+    border: solid 2px #5F9EA0;
+    
+    text-align: center;
+    
+    color: white;
+}
+
+/*CLASSES GLOBAIS*/
+
+#caixaBasePrincipal{
+    width: 100%;
+    height: 2435px;
+    
+    background-color: #000000;
+    
+    float: left;
+}
+
+#logo{
+    width: 160px;
+    height: 75px;
+    margin-left: 50px;
+    float: left;
+}
+
+#logo img{
+    width: 160px;
+    height: 75px;
+    float: left;
+}
+
+#tituloPrincipal{
+    width: 100%;
+    height: 50px;
+    
+    margin-bottom: 35px;
+    
+    float: left;
+}
+
+#explicacaoFormatacao{
+    width: 1350px;
+    height: 260px;
+    
+    float: left;
+}
+
+.caixaBase{
+    width: 100%;
+    height: 350px;
+    
+    margin-bottom: 50px;
+    
+    padding-top: 35px;
+    padding-left: 100px;
+    
+    float: left;
+}
+
+.conteudo, .conteudo2{
+    width: 230px;
+    height: 290px;
+    
+    margin-right: 70px;
+    
+    line-height: 1.7;
+    
+    background-color: aliceblue;
+    
+    float: left;
+}
+
+.conteudo2{
+    margin-right: 0px;
+    margin-left: 70px;
+}
+
+.conteudo img, .conteudo2 img{
+    width: 230px;
+    height: 290px;
+    
+    border: solid 2px #5F9EA0;
+    
+    float: left;
+}
+
+.titulo{
+    width: 900px;
+    height: 50px;
+    
+    background-color: black;
+    
+    float: left;
+}
+
+.conteudoTexto, .conteudoTexto2{
+    width: 900px;
+    height: 290px;
+    
+    background-color: #5F9EA0;
+    
+    float: left;
+}
+
+.rodape {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.redes-sociais {
+    padding-top: 16px;
+    margin-left: 1050px;
+    height: 100%;
+    width: 20%;
+}
+
+.facebook, .instagram, .twitter, .whatsapp {
+    margin-left: 13px;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.redes-sociais a:active,
+.redes-sociais a:hover {
+    color: #2f3030;
+    text-decoration: none;
+    text-shadow: 4px 0px 0px rgb(95, 158, 160);
+}
+
+.redes-sociais a {
+    color: black;
+    font-size: 50px;
+    transition: text-shadow 0.5s;
+}
+
+.rodape {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.redes-sociais {
+    padding-top: 16px;
+    margin-left: 1020px;
+    height: 100%;
+    width: 20%;
+}
+
+.facebook, .instagram, .twitter, .whatsapp {
+    margin-left: 13px;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.redes-sociais a:active,
+.redes-sociais a:hover {
+    color: #2f3030;
+    text-decoration: none;
+    text-shadow: 4px 0px 0px rgb(95, 158, 160);
+}
+
+.redes-sociais a {
+    color: black;
+    font-size: 50px;
+    transition: text-shadow 0.5s;
+}
+
+.subirTopo {
+    text-decoration: none;
+    bottom: 10px;
+    right: 30px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    position: fixed;
+    border: 0;
+    border-radius: 100%;
+    }
+    
+    .subirTopo:hover {
+    color: #5f9ea0;
+    opacity: 10;
+    }

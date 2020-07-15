@@ -1,0 +1,373 @@
+<html>
+    <head>
+        <title>
+            Arquitetura dos Sistemas Operacionais
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css1/styleArquitetura.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/18e2f18084.js" crossorigin="anonymous"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/topo.js"></script>
+    </head>
+    <body>
+        
+        
+        <!--Caixa BASE-->
+        <div id="caixaBasePrincipal">
+        
+            <!--Menus-->
+            <div class="menu">
+                <div id="logo">
+                    <img src="imagens/logoPrincipal2.PNG">
+                </div>
+                <ul>
+                    <li class="active centerOneLine"><a href="index.html"><i class="fa fa-home"></i> Home </a></li>
+                    <li class="centerThreeLines"><a href="arquitetura.html"> Arquitetura dos Sistemas Operacionais</a>
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="arquitetura.html#explicacao"> Definição </a></li>
+                                <li><a href="historico.html"> Histórico </a></li>
+                                <li><a href="arquitetura.html#classificacao"> Classificação </a></li>
+                                <li><a href="arquitetura.html#gerenciador"> Gerenciador de processos </a></li>
+                                <li><a href="arquitetura.html#sistema"> Sistemas de arquivos </a></li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="centerTwoLines hover-so"><a href="#"> Sistema Operacional </a>
+                        <div class="sub-menu1 align-margin">
+                            <ul>
+                                <li><a href="sofechado.html"> Código fechado <i class="fa fa-angle-right"></i></a>
+                                    <div class="sub-menu2 width">
+                                        <ul>
+                                            <li><a href="sofechado.html"> Definição </a></li>
+                                            <li><a href="sofechado.html#titulo-linha-de-comando"> Modo texto </a></li>
+                                            <li><a href="sofechado.html#modo-grafico-fechado"> Modo gráfico </a></li>
+                                            <li><a href="sofechado.html#virtualbox-cp"> Instalação na máquina virtual  </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="soaberto.html"> Código aberto <i class="fa fa-angle-right"></i></a>
+                                <div class="sub-menu2 width">
+                                        <ul>
+                                            <li><a href="soaberto.html"> Definição </a></li>
+                                            <li><a href="soaberto.html#titulo-linha-de-comando"> Modo texto </a></li>
+                                            <li><a href="soaberto.html#titulo-modog-aberto"> Modo gráfico </a></li>
+                                            <li><a href="soaberto.html#niveis"> Níveis de execução </a></li>
+                                            <li><a href="soaberto.html#virtualbox"> Instalação na máquina virtual  </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="centerOneLine"><a href="#"> Editor de Texto </a>
+                        <div class="sub-menu1 align-margin2">
+                            <ul>
+                                <li><a href="formatacao.html"> Formatação </a></li>
+                                <li><a href="insercao.html"> Inserção </a></li>
+                                <li><a href="verif-impress.html#verificacao-ortografia"> Verificação de ortografia </a></li>
+                                <li><a href="verif-impress.html#impressao-arquivos"> Impressão de arquivos </a></li>
+                            </ul>
+                        </div>
+                    </li>                       
+                    <li class="centerOneLine"><a href="#"> Planilha Eletrônica </a>
+                        <div class="sub-menu1 align-margin2">
+                            <ul>
+                                <li><a href="planilha.html"> Criação de planilha </a></li>
+                                <li><a href="formatacaoCelulas.html"> Formatação de células </a></li>
+                                <li><a href="entrada.html"> Entrada de dados </a></li>
+                                <li><a href="funcoes.html"> Funções </a></li>
+                                <li><a href="graficos.html"> Criação de gráficos  </a></li>
+                                <li><a href="impressao.html"> Impressão </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!--TÍTULO PRINCIPAL-->
+            <div id="tituloPrincipal">
+                <h1>
+                    Arquitetura dos Sistemas Operacionais
+                </h1>
+            </div>
+            
+            <div id="explicacao">
+                <p class="texto">
+                    O sistema operacional é o software ou programa mais importante em execução no computador, o que nos permite usar e emitir comandos. Ele administra todos os recursos do computador, ou seja, o software e o hardware. É a estrutura que sustenta e administra todos os programas e partes do computador. Os sistemas operacionais possuem também uma linguagem de comandos e diversos utilitários de apoio que são usados para complementar o sistema operacional.
+                </p>
+            </div>
+            
+            <!--Classificação dos SOPS-->
+            <div id="classificacao">
+                <div id="titulo-classificacao">
+                    <h1 class="titulo1">Classificação</h1>
+                </div>
+                <div id="monotarefa">
+                    <div class="titulo-monotarefa">
+                        <h3> MONOTAREFA </h3>
+                    </div>
+                    <div class="conteudo-monotarefa centerObject">
+                        <p> Como o próprio nome diz, o sistema operacional permite que apenas um
+                            programa (tarefa) seja executado de cada vez. </p>
+                    </div>
+                    <div class="imagem-monotarefa centerObject">
+                        <img src="imagens1/monotarefa.jpg">
+                    </div>
+                </div>
+                <div id="multitarefa">
+                    <div class="titulo-multitarefa">
+                        <h3> MULTITAREFA </h3>
+                    </div>
+                    <div class="conteudo-multitarefa centerObject">
+                        <p> O termo multitarefa refere-se à capacidade que um sistema operacional tem de
+                            rodar mais de um programa ao mesmo tempo. </p>
+                    </div>
+                    <div class="imagem-multitarefa centerObject">
+                        <img src="imagens1/multitarefa.jpeg">
+                    </div>
+                </div>
+                <div class="indicador1">
+
+                </div>
+                <div class="indicador2">
+
+                </div>
+                <div class="indicador3">
+
+                </div> 
+                <div id="cooperativa">
+                    <div class="titulo-cooperativa">
+                        MULTITAREFA COOPERATIVA
+                    </div>
+                    <div class="conteudo-cooperativa">
+                        <p>  
+                            Executa dois ou mais programas ao mesmo tempo, mas o programa que está em primeiro plano tem controle sobre o processador.  Neste caso, se este falhar, bloqueia o computador e tem que ser reiniciado.
+                        </p>
+                    </div>
+                </div>
+                <div id="preemptiva">
+                    <div class="titulo-preemptiva">
+                        MULTITAREFA PREEMPTIVA
+                    </div>
+                    <div class="conteudo-preemptiva">
+                        É o processador que controla a execução dos programas. Desta forma, permite ao sistema operativo recuperar o controle caso um programa bloqueie. O utilizador perde os trabalhos do programa que falhou. mas os restantes programas continuam a trabalhar.
+                    </div>
+                </div>
+                <div id="multithreading">
+                    <div class="titulo-multithreading">
+                        MULTITAREFA MULTITHREADING
+                    </div>
+                    <div class="conteudo-multithreading">
+                        Executa mais de uma tarefa do mesmo programa. Os programas criam threads, ou seja, tarefas distintas que executam determinadas funções dentro do mesmo programa.
+                    </div>
+                </div>
+            </div>
+            
+            <div id="gerenciador">
+                <h2>
+                    Gerenciador de processos
+                </h2>
+            </div>
+            
+            <div class="conceitos">
+                <div class="caixaTextos">
+                    <p class="texto">
+                        O gerenciamento de processos é um dos conceitos fundamentais dos sistemas operacionais modernos. No gerenciamento dos processos serão definidas as propriedades dos processos em execução, e a maneira como cada um receberá o tempo de execução no processador. A principal função do gerenciador de processos é exatamente a execução do processo no processador de maneira adequada (considerando a prioridade do processo e a quantidade de processos gerenciados).
+                    </p>
+                </div>
+                <div class="subtitulos">
+                    <h3>
+                        Tipos de gerenciadores de projetos
+                    </h3>
+                </div>
+                
+                <p class="textoSub">
+                    Em relação à execução dos processos, os gerenciadores podem ser separados em três categorias:
+                </p>
+                
+                <br>
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        • Gerenciadores por Admissão: neste caso o gerenciador irá escolher quais processos serão selecionados para serem executados no processador. Quando um programa solicita ao sistema operacional a execução de alguma operação, é o gerenciador de processos que irá decidir o momento em que esta solicitação será atendida. Esta escolha é feita verificando-se alguns fatores, sendo que o principal fator é a Prioridade do Processo.
+                    </p>
+                    
+                    <p class="textoSub">
+                        Não existe nenhum sistema operacional para computadores pessoais que utilize esse tipo de gerenciador de processos;
+                    </p>
+                </div>
+                
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        • Gerenciadores por Tempo Médio: este está presente em todos os sistemas que trabalham com Memória Virtual (descrito na Unidade 12) que temporariamente irá retirar processos da memória principal e guardá-los na memória secundária, e vice- versa. A escolha de qual processo irá sair da memória principal para a secundária é feita de acordo com o estado do processo.
+                    </p>
+
+                    <p class="textoSub">
+                        Enquanto o processo está nos estados de Espera e Execução, ficará na memória principal e quando passar para o estado de Bloqueio será retirado da memória principal e será armazenado na memória secundária. Quando o processo passar do estado de Bloqueio para Espera, será enviado da memória secundária para a principal;
+                    </p>
+                </div>
+                
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        • Gerenciadores Despachantes: os despachantes designam os processos para serem executados pelo processador baseados em alguma alteração ocorrida no sistema, que pode ser causada por uma interrupção do relógio do processador, por um dispositivo, por uma instrução de Chamada do Sistema, ou por algum outro sinal identificável. Dessa maneira, não será nem a prioridade do processo, nem a alteração do seu estado que influenciarão na escolha feita pelo gerenciador. As execuções dos processos serão feitas de acordo com o nível de “atividade” do sistema.
+                    </p>
+                    
+                    <p class="textoSub">
+                        Quando houver uma carga de trabalho muito grande, os processos receberão em intervalos regulares o devido tempo de execução no processador. Quando a carga de trabalho for menor, cada processo terá mais tempo para executar no processador. (O tempo de interrupção causado pelo relógio pode ser definido pelo programador do sistema operacional).
+                    </p>
+                </div>
+                
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        Na informática o termo algoritmo define o conjunto de instruções que irão executar uma determinada tarefa. Um algoritmo para um Gerenciador de Processos contém as instruções necessárias para que o gerenciamento seja feito de maneira correta e organizada. Atualmente os sistemas operacionais têm uma necessidade por algoritmos extremamente eficientes, devido ao maior número de programas em execução nos computadores, e da maior quantidade de recursos disponíveis.
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="textoSub">
+                        Um algoritmo pode ser escrito definindo-se um Gerenciador Despachante, com a troca entre os processos no processador feita a partir de interrupções do relógio a cada 100ms, e a troca entre os processos ser feito por um método de rodízio. Esse tipo de algoritmo é um dos mais simples de ser feito. Os sistemas operacionais atuais necessitam de um algoritmo com maior capacidade de controle dos processos e com maior aproveitamento do processador. Pode-se planejar um algoritmo que trabalhe com prioridade de execução nos processos, ou com base no Estado de Execução deles.
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="textoSub">
+                        Essa escolha é feita durante o desenvolvimento do Sistema Operacional e influenciará diretamente o desempenho geral do computador. A escolha é feita pensando-se no tipo de utilização que o usuário fará dos recursos computacionais e do tipo de aplicação que será executado.
+                    </p>
+                </div>
+                
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        Essa escolha é feita durante o desenvolvimento do Sistema Operacional e influenciará diretamente o desempenho geral do computador. A escolha é feita pensando-se no tipo de utilização que o usuário fará dos recursos computacionais e do tipo de aplicação que será executado.
+                    </p>
+                </div>
+                
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        Um exemplo de algoritmo avançado para gerenciamento de processos é chamado de Fila de Resposta Multi-nível. Os objetivos desse algoritmo são:
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="textoSub">
+                        •Executar preferencialmente Processos com poucas instruções
+                    </p>
+                    
+                    <p class="textoSub">
+                        •Executar preferencialmente Processos que irão fazer acesso a algum dispositivo;
+                    </p>
+                    
+                    <p class="textoSub">
+                        •Definir rapidamente a natureza do processo, e gerenciá-lo adequadamente.
+                    </p>
+                </div>
+                
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        Nesse algoritmo cada processo tem a oportunidade de concluir suas instruções a cada instante. Caso isso não aconteça, o gerenciador irá reclassificar o processo, colocando-o em um determinado nível de controle.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="conceitos">
+                <div id="sistema">
+                    <h2>
+                        Sistema de arquivos
+                    </h2>
+                </div>
+                
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        Na prática, um sistema de arquivo é um conjunto de estruturas lógicas, ou seja, feitas diretamente via software, que permite ao sistema operacional ter acesso e controlar os dados gravados no disco.
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="textoSub">
+                        Cada sistema operacional lida com um sistema de arquivos diferente e cada sistema de arquivos possui as suas peculiaridades, como limitações, qualidade, velocidade, gerenciamento de espaço, entre outras características. É o sistema de arquivos que define como os bytes que compõem um arquivo serão armazenados no disco e de que forma o sistema operacional terá acesso aos dados.
+                        Cada sistema operacional lida com um sistema de arquivos diferente e cada sistema de arquivos possui as suas peculiaridades, como limitações, qualidade, velocidade, gerenciamento de espaço, entre outras características. É o sistema de arquivos que define como os bytes que compõem um arquivo serão armazenados no disco e de que forma o sistema operacional terá acesso aos dados.
+                    </p>
+                </div>
+                
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        O constante crescimento da capacidade de armazenamento dos discos rígidos contribuiu para a variedade de sistemas de arquivos. Antes, os HDs tinham baixa capacidade de armazenamento. Hoje em dia, não é raro encontrar discos com 1 TB ou mais, mesmo em computadores simples.
+                    </p>
+                </div>
+                
+                <div class="subtitulos">
+                    <h3>
+                        Variedade de sistemas de arquivos
+                    </h3>
+                </div>
+                
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        Cada sistema operacional exige um sistema de arquivos diferente. Além disso, a própria evolução dos dispositivos de armazenamento contribuíram para o surgimento de novos sistemas.
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="textoSub">
+                        No universo Windows, o número de sistemas de arquivos é mais limitado. Na época do Windows 95, a Microsoft usava o sistema de arquivos FAT16. Devido às suas limitações, foi substituído pelo FAT32 que, anos depois, foi substituído pelo NTFS. Este é usado até hoje e se estabeleceu devido à flexibilidade.
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="textoSub">
+                        Já no amplo universo Linux, onde é possível encontrar uma enorme variedade de distribuições, o leque de sistemas de arquivos é bem maior. Os mais usados são o EXT3 e o EXT4, bem como o ReiserFS. Também há o XFS e o JFS, menos conhecidos.
+                    </p>
+                </div>
+                
+                <div class="subtitulos">
+                    <h3>
+                        Diferenças entre os principais sistemas de arquivos
+                    </h3>
+                </div>
+                
+                <div class="caixaTextos">
+                    <p class="textoSub">
+                        As primeiras versões do Windows usavam um sistema de arquivo chamado FAT16. O nome FAT deriva da sigla, em inglês, File Allocation Table. Este sistema de arquivos possui uma tabela que serve como um mapa de utilização do disco.
+                    </p>
+                    
+                    <p class="textoSub">
+                        O numeral 16 deriva do fato de que cada posição no disco utiliza uma área variável de 16 bits. O sistema FAT16 trabalha com setores de alocação, também conhecidos como clusters. Cada cluster tem um tamanho específico, dependendo da capacidade total do disco rígido. O grande problema é que este padrãp não lidava com discos maiores que 2 GB e os clusters eram muito grandes, o que acabava ocasionando um desperdício de espaço.
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="textoSub">
+                        Para diminuir o desperdício, foi lançada uma atualização, chamada de FAT32. Este sistema de arquivos passou a ser usado no Windows 95 até o Windows Me. Nele, o tamanho dos clusters é menor, desperdiçando menos espaço. No entanto, o padrão 32 trazia um outro problema: era muito lento. Em geral, era 6% mais lento que o sistema FAT16.
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="textoSub">
+                        Para completar a lista de desvantagens, em discos formatados com o sistema de arquivos FAT32, não é possível ter partições maiores do que 32 GB. Para piorar a situação, o sistema é incapaz de reconhecer arquivos maiores que 4 GB em sistemas FAT32. Além disso, é totalmente inseguro. Qualquer pessoa com acesso ao disco pode ler todos os arquivos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="rodape">
+            <div class="redes-sociais">
+                <div class="facebook">
+                    <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                </div>
+                <div class="instagram">
+                    <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+                </div>
+                <div class="twitter">
+                    <a target="_blank" href="https://twitter.com/login"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <div class="whatsapp">
+                    <a target="_blank" href="WHATSAPP/index.html"><i class="fab fa-whatsapp-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <a class="subirTopo">
+            <i class="far fa-arrow-alt-circle-up"></i>
+        </a>
+    </body>
+</html>

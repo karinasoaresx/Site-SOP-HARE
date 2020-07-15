@@ -1,0 +1,242 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CLASSES GLOBAIS DO SITE */
+.centerObject {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*CLASSES DO MENU*/
+
+.centerOneLine {
+    padding-top: 19px
+}
+
+.centerTwoLines {
+    padding-top: 12px;
+}
+
+.centerThreeLines {
+    padding-top: 3px;
+}
+
+.menu {
+    background-color: #000000;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li {
+    width: 100%;
+    height: 60px;
+    margin: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu ul li:hover {
+    background-color: #5F9EA0;
+    border-radius: 3px;
+}
+
+.sub-menu1, .sub-menu2 {
+    display: none;
+}
+
+.menu ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+.menu ul li:hover .align-margin {
+    margin-top: 14px;
+}
+
+.menu ul li:hover .align-margin2 {
+    margin-top: 24px;
+}
+
+.menu ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu1 ul li {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    text-align: left;
+}
+
+.menu ul li:hover .width ul li {
+    width: 170px;
+}
+
+.menu ul li ul li:hover .sub-menu2 {
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    margin-top: -30px;
+    background-color: #000000;
+}
+
+.menu .fa {
+    margin-right: 8px;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+
+/*.menuContainer ul li:hover .sub-menu1 ul li a:hover {
+    color: aqua;
+}*/
+/*CLASSES DO MENU*/
+
+
+
+/*CLASSES GLOBAIS*/
+
+.texto {
+    font-family: arial;
+    font-size: 25px;
+    
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 3px;
+    
+    color: #ffffff;
+    
+    line-height: 1.5;
+    
+    text-align: center;
+}
+
+h1{
+    font-family: "Times new roman";
+    font-size: 30px;
+    
+    padding-left: 5px;
+    
+    line-height: 1.5;
+    
+    color: white;
+    
+    text-align: center;
+    
+    border-bottom: solid 2px #5F9EA0;
+    border-top: solid 2px #5F9EA0;
+}
+
+h2{
+    width: 100%;
+    font-family: "Times new roman";
+    font-size: 28px;
+    
+    padding-left: 5px;
+    padding-top: 3px;
+    
+    line-height: 1.5;
+    
+    border-bottom: solid 2px #5F9EA0;
+    
+    text-align: center;
+    
+    color: white;
+}
+
+/*CLASSES GLOBAIS*/
+
+#caixaBasePrincipal{
+    width: 100%;
+    height: 500px;
+    
+    background-color: black;
+    
+    float: left;
+}
+
+#logo{
+    width: 200px;
+    height: 90px;
+    
+    margin-left: 25px;
+    
+    float: left;
+}
+
+#logo img{
+    width: 200px;
+    height: 90px;
+    
+    float: left;
+}
+
+#titulo{
+    width: 100%;
+    height: 50px;
+    
+    margin-bottom: 25px;
+    
+    float: left;
+}
+
+#comunicado{
+    width: 700px;
+    height: 250px;
+    
+    margin-left: 350px;
+    
+    padding-top: 40px;
+    
+    border-radius: 25px 25px 25px 25px;
+    
+    background-color: #5F9EA0;
+    
+    float: left;
+}
+
+.redes-sociais {
+    padding-top: 16px;
+    margin-left: 1080px;
+    height: 100%;
+    width: 15%;
+}
+
+.facebook, .instagram, .twitter {
+    margin-left: 13px;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.redes-sociais a:active,
+.redes-sociais a:hover {
+    color: #2f3030;
+    text-decoration: none;
+    text-shadow: 4px 0px 0px rgb(95, 158, 160);
+}
+
+.redes-sociais a {
+    color: black;
+    font-size: 50px;
+    transition: text-shadow 0.5s;
+}

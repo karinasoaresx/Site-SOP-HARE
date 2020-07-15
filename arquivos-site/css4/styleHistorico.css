@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+/* CLASSES GLOBAIS DO SITE */
+.centerObject {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*CLASSES DO MENU*/
+
+.centerOneLine {
+    padding-top: 18px
+}
+
+.centerTwoLines {
+    padding-top: 10px;
+}
+
+.centerThreeLines {
+    padding-top: 2px;
+}
+
+.menu {
+    background-color: black;
+    text-align: center;
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 6;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li {
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu ul li:hover {
+    background-color: #5f9ea0;
+    border-radius: 3px;
+}
+
+.sub-menu1, .sub-menu2, .sub-menu3 {
+    display: none;
+    z-index: 5;
+}
+
+.menu ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.menu ul li:hover .sub-menu3 {
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.menu ul li:hover .align-margin {
+    margin-top: 11px;
+}
+
+.menu ul li:hover .align-margin2 {
+    margin-top: 20px;
+}
+
+.menu ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu3 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu1 ul li {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu3 ul li {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .sub-menu3 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .width ul li {
+    width: 170px;
+}
+
+.menu ul li ul li:hover .sub-menu2 {
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    margin-top: -40px;
+    background-color: black;
+}
+
+.menu .fa {
+    margin-right: 8px;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+#logo{
+    width: 160px;
+    height: 75px;
+    margin-left: 50px;
+    float: left;
+}
+
+#logo img{
+    width: 160px;
+    height: 75px;
+    float: left;
+}
+
+@font-face {font-family : "'Abel'";font-style : normal;font-weight : 400;
+src : local('Abel'), local('Abel-Regular'), url(https://fonts.gstatic.com/s/abel/v6/N59kklKPso9WzbZH9jwJSg.ttf) format('truetype');}
+body {background-color:#5F9EA0;font-family : "'Abel'"; margin-top: 80px;}
+ul li { list-style:none;}
+.linha-do-tempo {
+position: relative;
+max-width: 1024px;height: auto;
+padding: 0px;margin: 0px auto;
+overflow: hidden;}
+.marcador {
+width: 50%;float: left;
+height: 100%;position: absolute;
+z-index: -1;border-right: 2px dashed #000000;box-sizing: border-box;} 
+.ano {
+font-weight: 600;
+font-size: 25px;
+letter-spacing: 3px;
+color: #ffffff;
+background-color: rgb(38, 38, 38);background-image: -webkit-linear-gradient(140deg,
+rgba(255, 255, 255, .2) 50%,
+transparent 50%,
+transparent);
+text-align: center; 
+margin-top:  7%;
+margin: 1% auto;
+clear: both;}
+.item {
+  width: 44%;
+  margin: 4% 0.5%;
+  padding: 1%;
+  float: right;}
+.item:nth-of-type(2n) {
+  float: left; 
+   margin: 4% 0.5%;
+  padding: 1%;}
+.item p {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: justify;}
+.item p a {
+  color: #e44b4b;
+  text-align: center;}
+@media all and (max-width: 650px) {
+.item {width: 80%;}}
+
+.rodape {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.redes-sociais {
+    padding-top: 16px;
+    margin-left: 1020px;
+    height: 100%;
+    width: 20%;
+}
+
+.facebook, .instagram, .twitter, .whatsapp {
+    margin-left: 13px;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.redes-sociais a:active,
+.redes-sociais a:hover {
+    color: #2f3030;
+    text-decoration: none;
+    text-shadow: 4px 0px 0px rgb(95, 158, 160);
+}
+
+.redes-sociais a {
+    color: black;
+    font-size: 50px;
+    transition: text-shadow 0.5s;
+}
+
+.subirTopo {
+    text-decoration: none;
+    bottom: 10px;
+    right: 30px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    position: fixed;
+    border: 0;
+    border-radius: 100%;
+    }
+    
+    .subirTopo:hover {
+    color: #5f9ea0;
+    opacity: 10;
+    }

@@ -1,0 +1,465 @@
+<html>
+    <head>
+    <title> Kalelura: Sistema operacional de código aberto </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- IMPORTAR ARQUIVO JQUERY -->
+    <script src="js/jquery.js"></script>
+    <script src="js/ancora.js"></script>
+    <script src="js/topo.js"></script>
+    <script src="https://kit.fontawesome.com/18e2f18084.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+<!-- PARTE DO MENU -->
+            <div class="menu">
+                <div id="logo">
+                    <img src="imagens/logoPrincipal2.PNG">
+                </div>
+                <ul>
+                    <li class="active centerOneLine"><a href="index.html"><i class="fa fa-home"></i> Home </a></li>
+                    <li class="centerThreeLines"><a href="arquitetura.html"> Arquitetura dos Sistemas Operacionais</a>
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="arquitetura.html#explicacao"> Definição </a></li>
+                                <li><a href="historico.html"> Histórico </a></li>
+                                <li><a href="arquitetura.html#classificacao"> Classificação </a></li>
+                                <li><a href="arquitetura.html#gerenciador"> Gerenciador de processos </a></li>
+                                <li><a href="arquitetura.html#sistema"> Sistemas de arquivos </a></li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="centerTwoLines hover-so"><a href="#"> Sistema Operacional </a>
+                        <div class="sub-menu1 align-margin">
+                            <ul>
+                                <li><a href="sofechado.html"> Código fechado <i class="fa fa-angle-right"></i></a>
+                                    <div class="sub-menu2 width">
+                                        <ul>
+                                            <li><a href="sofechado.html"> Definição </a></li>
+                                            <li><a href="sofechado.html#titulo-linha-de-comando"> Modo texto </a></li>
+                                            <li><a href="sofechado.html#modo-grafico-fechado"> Modo gráfico </a></li>
+                                            <li><a href="sofechado.html#virtualbox-cp"> Instalação na máquina virtual  </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="soaberto.html"> Código aberto <i class="fa fa-angle-right"></i></a>
+                                <div class="sub-menu2 width">
+                                        <ul>
+                                            <li><a href="soaberto.html"> Definição </a></li>
+                                            <li><a href="soaberto.html#titulo-linha-de-comando"> Modo texto </a></li>
+                                            <li><a href="soaberto.html#titulo-modog-aberto"> Modo gráfico </a></li>
+                                            <li><a href="soaberto.html#niveis"> Níveis de execução </a></li>
+                                            <li><a href="soaberto.html#virtualbox"> Instalação na máquina virtual  </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="centerOneLine"><a href="#"> Editor de Texto </a>
+                        <div class="sub-menu1 align-margin2">
+                            <ul>
+                                <li><a href="formatacao.html"> Formatação </a></li>
+                                <li><a href="insercao.html"> Inserção </a></li>
+                                <li><a href="verif-impress.html#verificacao-ortografia"> Verificação de ortografia </a></li>
+                                <li><a href="verif-impress.html#impressao-arquivos"> Impressão de arquivos </a></li>
+                            </ul>
+                        </div>
+                    </li>                       
+                    <li class="centerOneLine"><a href="#"> Planilha Eletrônica </a>
+                        <div class="sub-menu1 align-margin2">
+                            <ul>
+                                <li><a href="planilha.html"> Criação de planilha </a></li>
+                                <li><a href="formatacaoCelulas.html"> Formatação de células </a></li>
+                                <li><a href="entrada.html"> Entrada de dados </a></li>
+                                <li><a href="funcoes.html"> Funções </a></li>
+                                <li><a href="graficos.html"> Criação de gráficos  </a></li>
+                                <li><a href="impressao.html"> Impressão </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+<!-- BOTÃO VOLTAR AO TOPO -->
+        <a class="subirTopo">
+            <i class="far fa-arrow-alt-circle-up"></i>
+        </a>
+
+<!--    PARTE DO CONTEUDO    -->
+        <div class="conteudo-cdg">
+            <div id="explicacao-cdg-aberto">
+                <div id="titulo-cdg-aberto">
+                    <h1> O que é um Sistema Operacional de código aberto? </h1>
+                </div>
+                <div id="definicao-cdg-aberto" class="centerObject">
+                    <p>
+                        Conhecidos como Open Source, os softwares de código aberto são sistemas baseados em licenciamentos, que permitem que qualquer pessoa possa acessar, analisar e alterá-los, sem que seja necessário qualquer tipo de autorização.
+                    </p>
+                </div>
+            </div>  
+            <div id="linha-de-comando">
+                <div id="titulo-linha-de-comando">
+                    <h1> Modo texto (Debian 9) </h1>
+                </div>
+                <div id="nesta-pagina">
+                    <h3> NESTA PÁGINA </h3>
+                    <ul class="item-lista">
+                        <li><a href="#modo-grafico"> Modo gráfico (Interface gráfica): </a>
+                            <ul class="subitens-lista">
+                                <li><a href="#area-trabalho"> Área de trabalho </a></li>
+                                <li><a href="#trabalho-janelas"> Trabalho com janelas </a></li>
+                                <li><a href="#config-sistema"> Configuração do sistema </a></li>
+                                <li><a href="#ferramentas-sistema"> Ferramentas do sistema </a></li>
+                                <li><a href="#acessorios"> Acessórios </a></li>
+                                <li><a href="#menu-ajuda"> Menu de ajuda </a></li>
+                                <li><a href="#gerenciar-arquivos"> Gerenciamento de arquivos </a></li>
+                                <li><a href="#usuarios-permissoes"> Gerenciamento de usuários e permissões </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#niveis"> Níveis de execução </a></li>
+                        <li><a href="#virtualbox"> Instalação na máquina virtual</a> 
+                            <ul class="subitens-lista">
+                                <li><a href="#pacotes"> Pacotes </a></li> 
+                                <li><a href="#atualizacao"> Atualização </a></li>
+                            </ul>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="navegar-diretorios">
+                    <div class="titulo-navegar-diretorios">
+                        <p> NAVEGAÇÃO ENTRE DIRETÓRIOS </p>
+                    </div>
+                    <div class="comando-navegar-diretorios">
+                        <p> Para mudar de um diretório para o outro, é utilizado o comando "cd" e logo em seguida o nome do diretório que você deseja ir. </p>
+                    </div>
+                    <div class="exemplo-navegar-diretorios centerObject">
+                        <img src="imagens/linux/mudar-diretorio.PNG">
+                    </div>
+                </div>
+                <div class="criar-diretorios">
+                    <div class="titulo-criar-diretorios">
+                        CRIAÇÃO DE DIRETÓRIOS E ARQUIVOS
+                    </div>
+                    <div class="comando-criar-diretorios">
+                        <p> Para criar um diretório, é utilizado o comando "mkdir". </p>
+                        <p> Já para criar um arquivo, o comando utilizado é o "touch". </p>
+                    </div>
+                    <div class="exemplo-criar-diretorios centerObject">
+                        <img src="imagens/linux/criar.PNG">
+                    </div>
+                </div>
+                <div class="excluir-diretorios">
+                    <div class="titulo-excluir-diretorios">
+                        EXCLUSÃO DE DIRETÓRIOS E ARQUIVOS
+                    </div>
+                    <div class="comando-excluir-diretorios">
+                        <p> Para excluir um diretório, é utilizado o comando "rmdir". </p>
+                        <p> Já para excluir um arquivo, é utilizado somente o comando "rm". </p>
+                    </div>
+                    <div class="exemplo-excluir-diretorios centerObject">
+                        <img src="imagens/linux/remover.PNG">
+                    </div>
+                </div>
+                <div class="renomear-diretorios">
+                    <div class="titulo-renomear-diretorios">
+                        RENOMEAÇÃO DIRETÓRIOS E ARQUIVOS
+                    </div>
+                    <div class="comando-renomear-diretorios">
+                        <p> Para renomear tanto um diretório quanto um arquivo, é utilizado o comando "mv". </p>
+                    </div>
+                    <div class="exemplo-renomear-diretorios centerObject">
+                        <img src="imagens/linux/renomear.PNG">
+                    </div>
+                </div>
+                <div class="movimentar-diretorios">
+                    <div class="titulo-movimentar-diretorios">
+                        MOVIMENTAÇÃO ARQUIVOS E DIRETÓRIOS
+                    </div>
+                    <div class="comando-movimentar-diretorios">
+                        <p> Para mover tanto um arquivo quanto um diretório, também é utilizado o comando "mv". </p>
+                    </div>
+                    <div class="exemplo-movimentar-diretorios centerObject">
+                        <img src="imagens/linux/mover-dir-arq.PNG">
+                    </div>
+                </div>
+                <div class="copiar-diretorios">
+                    <div class="titulo-copiar-diretorios">
+                        CÓPIA DE ARQUIVOS E DIRETÓRIOS
+                    </div>
+                    <div class="comando-copiar-diretorios">
+                        <p> Para copiar um diretório, é utilizado o comando "cp -r". </p>
+                        <p> Já para copiar um arquivo, o comando utilizado é apenas o "cp". </p>
+                    </div>
+                    <div class="exemplo-copiar-diretorios centerObject">
+                        <img src="imagens/linux/cp-dir.PNG">
+                        <img src="imagens/linux/cp-arq.PNG">
+                    </div>
+                </div>
+                <div class="editar-arquivos">
+                    <div class="titulo-editar-arquivos">
+                        EDIÇÃO DE ARQUIVOS
+                    </div>
+                    <div class="comando-editar-arquivos">
+                        <p> Para editar um arquivo, é utilizado o editor "vi". </p>
+                    </div>
+                    <div class="exemplo-editar-arquivos centerObject">
+                        <div class="explicacao-edit-arq">
+                            <p> Digite "vi {nome do arquivo}", como mostra o exemplo abaixo. </p>
+                        </div>
+                        <div class="edit1"><img src="imagens/linux/editar-arq.PNG"></div>
+                        <div class="edit2"><img src="imagens/linux/editar-arq2.PNG"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="modo-grafico">
+                <div id="titulo-modog-aberto">
+                    <h1> Modo gráfico (Ubuntu 20.04) </h1>
+                </div>
+                <div id="area-trabalho" class="centerObject">
+                    <div class="titulo-area-trabalho">
+                        ÁREA DE TRABALHO
+                    </div>
+                    <div class="comando-area-trabalho1">
+                        <p> Para adicionais itens na área de trabalho, clique com o botão direito no arquivo ou pasta, depois vá em "Mover Para... > Área de Trabalho". </p>
+                    </div>
+                    <div class="exemplo-area-trabalho1 centerObject">
+                        <img src="imagens/linux/area-trab1.PNG">
+                    </div>
+                    <div class="comando-area-trabalho2">
+                        <p> Para alterar o tamanho dos ícones, clique com o botão direito na área de trabalho e vá em "Configurações > Aparência". </p>
+                    </div>
+                    <div class="exemplo-area-trabalho2 centerObject">
+                        <img src="imagens/linux/area-trab2.PNG">
+                    </div>
+                </div>
+                <div id="trabalho-janelas" class="centerObject">
+                    <div class="titulo-janelas">
+                        TRABALHO COM JANELAS
+                    </div>
+                    <div class="comando-janelas1">
+                        <p> Embora o conteúdo de cada janela seja diferente, todas as janelas têm algumas coisas em comum: barra de título, botões minimizar, maximizar e fechar, barra de rolagem, bordas e cantos. </p>
+                    </div>
+                    <div class="exemplo-janelas1 centerObject">
+                        <img src="imagens/linux/janelas.PNG">
+                    </div>
+                    <div class="comando-janelas2">
+                        <p> Botão Minimizar <i class="far fa-window-minimize"></i> : oculta a janela. </p>
+                        <p> Botão Maximizar <i class="far fa-square"></i> : oculta a janela. </p>
+                        <p> Botão Fechar <i class="fas fa-times"></i> : oculta a janela. </p>
+                    </div>
+                    <div class="exemplo-janelas2 centerObject">
+                        <img src="imagens/linux/janelas2.PNG">
+                    </div>
+                </div>
+                <div id="config-sistema" class="centerObject">
+                    <div class="titulo-config">
+                        CONFIGURAÇÃO DO SISTEMA
+                    </div>
+                    <div class="comando-config1">
+                        <p> Para abrir as configurações do sistema, clique com o botão direito na área de trabalho e vá em "Configurações". </p>
+                    </div>
+                    <div class="exemplo-config centerObject">
+                        <img src="imagens/linux/config-sistema.png">
+                    </div>
+                </div>
+                <div id="ferramentas-sistema" class="centerObject">
+                    <div class="titulo-ferramentas">
+                        FERRAMENTAS DO SISTEMA
+                    </div>
+                    <div class="comando-ferramentas1">
+                        <p> O modo escuro é uma ótima opção para quem usa o PC ou notebook a noite ou em um local com pouca iluminação.  </p>
+                    </div>
+                    <div class="exemplo-ferramentas1 centerObject">
+                        <img src="imagens/linux/tools1.PNG">
+                    </div>
+                    <div class="comando-ferramentas2">
+                        <p> O modo “não perturbe” permite desativar temporariamente todas as notificações para que não te atrapalhe durante seu tempo. </p>
+                    </div>
+                    <div class="exemplo-ferramentas2 centerObject">
+                        <img src="imagens/linux/tools2.PNG">
+                    </div>
+                </div>
+                <div id="acessorios" class="centerObject">
+                    <div class="titulo-acessorios">
+                        ACESSÓRIOS
+                    </div>
+                    <div class="comando-acessorios">
+                        <p> Para acessar os acessórios, clique no botão do canto inferior esquerdo. </p>
+                    </div>
+                    <div class="exemplo-acessorios centerObject">
+                        <img src="imagens/linux/acessorios.png">
+                    </div>
+                </div>
+                <div id="menu-ajuda" class="centerObject">
+                    <div class="titulo-ajuda">
+                        MENU DE AJUDA
+                    </div>
+                    <div class="comando-ajuda">
+                        <p> Para abrir o menu de ajuda, clique no ícone "?" no canto esquerdo da tela. </p>
+                    </div>
+                    <div class="exemplo-ajuda centerObject">
+                        <img src="imagens/linux/menuajuda.PNG">
+                    </div>
+                </div>
+                <div id="gerenciar-arquivos" class="centerObject">
+                    <div class="titulo-arquivos">
+                        GERENCIAMENTO DE ARQUIVOS
+                    </div>
+                    <div class="comando-arquivos1">
+                        <p> O gerenciador de arquivos do Ubuntu tem por função principal visualizar os arquivos que existem no computador. </p>
+                    </div>
+                    <div class="exemplo-arquivos1 centerObject">
+                        <img src="imagens/linux/geren-arq.PNG">
+                    </div>
+                    <div class="comando-arquivos2">
+                        <p> Outro botão importante é o que permite visualizar os arquivos de maneira diferente. Existem diversas formas de organizar arquivos e pastas. </p>
+                    </div>
+                    <div class="exemplo-arquivos2 centerObject">
+                        <img src="imagens/linux/geren-arq2.PNG">
+                    </div>
+                </div>
+                <div id="usuarios-permissoes" class="centerObject">
+                    <div class="titulo-usuarios-permissoes">
+                        GERENCIAMENTO DE USUÁRIOS E PERMISSÕES
+                    </div>
+                    <div class="subtitulo-usuarios">
+                        USUÁRIOS
+                    </div>
+                    <div class="comando-usuarios">
+                        <p> Antes de criar o usuário, é necessário baixar o pacote "Gnome-System-Tools". Depois de instalado, clique no botão no canto inferior esquerdo e depois abra o "Usuários e Grupos". </p>
+                    </div>
+                    <div class="exemplo-usuarios centerObject">
+                        <img src="imagens/linux/usuario.png">
+                    </div>
+                    <div class="subtitulo-permissoes">
+                        PERMISSÕES
+                    </div>
+                    <div class="comando-permissoes">
+                        <p> Para alterar as permissões de um arquivo ou pasta, clique com o botão direito e vá em "Propriedades". Um nova aba será aberta, clique em "Permissões". </p>
+                    </div>
+                    <div class="exemplo-permissoes centerObject">
+                        <img src="imagens/linux/permissoes.png">
+                    </div>
+                </div>
+            </div>
+            <div id="niveis">
+                <div id="titulo-niveis">
+                    <h1> Níveis de execução  </h1>
+                </div>
+                <div class="execucao">
+                    <div class="explicacao-niveis">
+                        <p> O Padrão System V deﬁne, entre outras coisas, como deve ser a inicialização dos serviços do sistema. Ele trabalha com níveis de inicialização, os chamados “runlevels”, havendo oito deles. </p>
+                            
+                        <p> A inicialização do sistema se inicia com um boot loader no qual o usuário escolhe qual sistema operacional ele irá iniciar na máquina. Uma vez escolhido, o boot loader inicia o carregamento do kernel na memória RAM e passa o controle do sistema a ele. Uma vez que o kernel já esteja controlando a máquina, é iniciada a fase de subir os serviços necessários para a utilização do sistema. </p>
+                    </div>
+                    <div class="conteudo-execucao">
+                        <img src="imagens/linux/nivel.PNG">
+                    </div>             
+                </div>
+            </div>
+            <div id="virtualbox">
+                <div id="titulo-virtualbox">
+                    <h1> VirtualBox </h1>
+                </div>
+                <div id="definicao-vbox" class="centerObject">
+                    <p> O VirtualBox é um programa de virtualização da Oracle que permite instalar e executar diferentes sistemas operacionais em um único computador sem complicações.  </p>
+                </div>
+                    <a href="Manual-VirtualBox.pdf" target="_blank"> 
+                        <div class="botao-vbox centerObject">
+                            <h3> Manual VirtualBox </h3>
+                        </div>
+                    </a>    
+                <div id="pacotes" class="centerObject">
+                    <div class="titulo-pacotes">
+                        PACOTES
+                    </div>
+                    <div class="comando-pacotes">
+                        <p> Para instalar um pacote no Linux, digite "apt install" ou "apt-get install", sem as aspas. </p>
+                    </div>
+                    <div class="exemplo-pacotes centerObject">
+                        <img src="imagens/linux/install-pcts.png">
+                    </div>
+                </div>
+                <div id="atualizacao" class="centerObject">
+                    <div class="titulo-atualizacao">
+                        ATUALIZAÇÃO
+                    </div>
+                    <div class="texto-atualizacao">
+                        <p> O VirtualBox já passou por várias versões. </p>
+                        <p>Confira nos links abaixo o que mudou. </p>
+                    </div>
+                    <div class="versao-4">
+                        <a href="https://www.virtualbox.org/wiki/Changelog-4.0" target="_blank">
+                            <div class="botaov4 centerObject">
+                                <h3> VirtualBox Versão 4.0 </h3>
+                            </div>
+                        </a>
+                        <a href="https://www.virtualbox.org/wiki/Changelog-4.1" target="_blank">
+                            <div class="botaov4 centerObject">
+                                <h3> VirtualBox Versão 4.1 </h3>
+                            </div>
+                        </a>    
+                        <a href="https://www.virtualbox.org/wiki/Changelog-4.2" target="_blank">    
+                            <div class="botaov4 centerObject">
+                                <h3> VirtualBox Versão 4.2 </h3>
+                            </div>
+                        </a>    
+                        <a href="https://www.virtualbox.org/wiki/Changelog-4.3" target="_blank">    
+                            <div class="botaov4 centerObject">
+                                <h3> VirtualBox Versão 4.3 </h3>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="versao-5">
+                        <a href="https://www.virtualbox.org/wiki/Changelog-5.0" target="_blank">
+                            <div class="botaov5 centerObject">
+                                <h3> VirtualBox Versão 5.0 </h3>
+                            </div>
+                        </a>    
+                        <a href="https://www.virtualbox.org/wiki/Changelog-5.1" target="_blank">    
+                            <div class="botaov5 centerObject">
+                                <h3> VirtualBox Versão 5.1 </h3>
+                            </div>
+                        </a>    
+                        <a href="https://www.virtualbox.org/wiki/Changelog-5.2" target="_blank">    
+                            <div class="botaov5 centerObject">
+                                <h3> VirtualBox Versão 5.2 </h3>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="versao-6">
+                        <a href="https://www.virtualbox.org/wiki/Changelog-6.0" target="_blank">
+                            <div class="botaov6 centerObject">
+                                <h3> VirtualBox Versão 6.0 </h3>
+                            </div>
+                        </a>
+                        <a href="https://www.virtualbox.org/wiki/Changelog" target="_blank">
+                            <div class="botaov6 centerObject">
+                                <h3> VirtualBox Versão 6.1 </h3>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+
+<!--     PARTE DO RODAPE       -->
+            <div class="rodape">
+                <div class="redes-sociais">
+                    <div class="facebook">
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="instagram">
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                    <div class="twitter">
+                        <a target="_blank" href="https://twitter.com/login"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <div class="whatsapp">
+                        <a target="_blank" href="WHATSAPP/index.html"><i class="fab fa-whatsapp-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

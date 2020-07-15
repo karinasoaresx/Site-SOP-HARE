@@ -1,0 +1,456 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+/* CLASSES GLOBAIS DO SITE */
+.centerObject {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*CLASSES DO MENU*/
+
+.centerOneLine {
+    padding-top: 18px
+}
+
+.centerTwoLines {
+    padding-top: 10px;
+}
+
+.centerThreeLines {
+    padding-top: 2px;
+}
+
+.menu {
+    background-color: black;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    top: 0;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li {
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu ul li:hover {
+    background-color: #5f9ea0;
+    border-radius: 3px;
+}
+
+.sub-menu1, .sub-menu2 {
+    display: none;
+}
+
+.menu ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.menu ul li:hover .align-margin {
+    margin-top: 11px;
+}
+
+.menu ul li:hover .align-margin2 {
+    margin-top: 20px;
+}
+
+.menu ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu1 ul li {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .width ul li {
+    width: 170px;
+}
+
+.menu ul li ul li:hover .sub-menu2 {
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    margin-top: -30px;
+    background-color: black;
+}
+
+.menu .fa {
+    margin-right: 8px;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.texto, .textoSub {
+    font-family: arial;
+    font-size: 25px;
+    
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 3px;
+    
+    color: #ffffff;
+    
+    line-height: 1.5;
+    
+    text-align: justify;
+}
+
+.textoSub{
+    font-size: 24px;
+}
+
+h1{
+    font-family: "Times new roman";
+    font-size: 30px;
+    
+    line-height: 1.5;
+    
+    color: white;
+    
+    text-align: center;
+    
+    border-bottom: solid 2px #5F9EA0;
+    border-top: solid 2px #5F9EA0;
+    
+}
+
+h2{
+    width: 1310;
+    font-family: "Times new roman";
+    font-size: 28px;
+    
+    padding-top: 3px;
+    
+    margin-left: 20px;
+    
+    line-height: 1.5;
+    
+    text-align: center;
+    
+    color: white;
+}
+
+h3{
+    text-align: left;
+    
+    font-family: "Times new roman";
+    
+    color: white;
+    
+    text-align: center;
+    
+    font-size: 26px;
+    
+    margin-top: 10px;
+}
+
+/*CLASSES GLOBAIS*/
+
+#caixaBasePrincipal{
+    width: 100%;
+    height: 5794px;
+    
+    border-radius: 0px 0px 25px 25px;
+    
+    border-bottom: solid 8px #5F9EA0;
+    
+    background-color: black;
+    
+    float: left;
+}
+
+#logo{
+    width: 160px;
+    height: 75px;
+    margin-left: 50px;
+    float: left;
+}
+
+#logo img{
+    width: 160px;
+    height: 75px;
+    float: left;
+}
+
+#tituloPrincipal{
+    width: 100%;
+    height: 48px;
+    
+    margin-bottom: 45px;
+    
+    float: left;
+}
+
+#explicacao{
+    width: 1349px;
+    height: 200px;
+    
+    margin-bottom: 50px;
+    
+    float: left;
+}
+
+.tituloUm {
+    font-size: 30px;
+    text-align: center;
+    padding: 12px;
+}
+
+.tituloDois {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+#classificacao {
+    background-color: #5f9ea0;
+    padding-top: 15px;
+    min-height: 700px;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+#titulo-classificacao {
+    color: white;
+    padding: 5px;
+    background-color: #5f9ea0;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 70px;
+}
+
+#monotarefa {
+    background-color: white;
+    height: 535px;
+    width: 400px;
+    float: left;
+    margin-left: 15px;;
+}
+
+#multitarefa {
+    background-color: white;
+    height: 535px;
+    width: 400px;
+    float: right;
+    margin-right: 520px;
+}
+
+.titulo-monotarefa, .titulo-multitarefa {
+    background-color: #5f9ea0;
+    height: 50px;
+    width: 100%;
+}
+
+.conteudo-monotarefa, .conteudo-multitarefa {
+    padding: 10px;
+    height: 140px;
+    width: 300px;
+}
+
+.conteudo-monotarefa p {
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.conteudo-multitarefa p {
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.imagem-monotarefa, .imagem-multitarefa {
+    background-color: rgb(220, 243, 119);
+    height: 303px;
+    width: 322px;
+}
+
+.imagem-multitarefa {
+    width: 314px;
+}
+
+.indicador1, .indicador2, .indicador3 {
+    background-color: white;
+    height: 30px;
+    width: 40px;
+    margin-left: 835px;
+    margin-top: 90px;
+    clip-path: polygon(0 32%, 51% 31%, 50% 3%, 100% 45%, 53% 86%, 53% 60%, 0 60%);
+}
+
+.indicador2, .indicador3 {
+    margin-top: 165px;
+}
+
+#cooperativa {
+    border: 1px solid #5f9ea0;
+    height: 150px;
+    width: 450px;
+    float: right;
+    background-color: #5f9ea0;
+    margin-top: -535px;
+    margin-right: 15px;
+}
+
+#preemptiva {
+    border: 1px solid #5f9ea0;
+    height: 150px;
+    width: 450px;
+    float: right;
+    margin-top: -345px;
+    margin-right: 15px;
+}
+#multithreading {
+    border: 1px solid #5f9ea0;
+    height: 150px;
+    width: 450px;
+    float: right;
+    margin-top: -155px;
+    margin-right: 15px;
+}
+
+.titulo-cooperativa, .titulo-preemptiva, .titulo-multithreading {
+    background-color: #5f9ea0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+}
+
+.conteudo-cooperativa, .conteudo-preemptiva, .conteudo-multithreading {
+    text-align: justify;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+}
+
+/*-------------------------------------------------------------*/
+
+.subtitulos, #gerenciador, #sistema{
+    width: 1340px;
+    height: 50px;
+    
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    
+    background-color: #5F9EA0;
+    
+    float: left;
+}
+
+.conceitos{
+    width: 1349px;
+    min-height: 1730px;
+    height: auto;
+    overflow: hidden;
+    
+    border-radius: 0px 0px 25px 25px;
+    
+    margin-bottom: 60px;
+    
+    float: left;
+}
+
+.caixaTextos{
+    width: 1349px;
+    min-height: 100px;
+    height: auto;
+    overflow: hidden;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    margin-bottom: 50px;
+    
+    float: left;
+}
+
+.rodape {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.redes-sociais {
+    padding-top: 16px;
+    margin-left: 1020px;
+    height: 100%;
+    width: 20%;
+}
+
+.facebook, .instagram, .twitter, .whatsapp {
+    margin-left: 13px;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.redes-sociais a:active,
+.redes-sociais a:hover {
+    color: #2f3030;
+    text-decoration: none;
+    text-shadow: 4px 0px 0px rgb(95, 158, 160);
+}
+
+.redes-sociais a {
+    color: black;
+    font-size: 50px;
+    transition: text-shadow 0.5s;
+}
+
+.subirTopo {
+    text-decoration: none;
+    bottom: 10px;
+    right: 30px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    position: fixed;
+    border: 0;
+    border-radius: 100%;
+    }
+    
+    .subirTopo:hover {
+    color: #5f9ea0;
+    opacity: 10;
+    }

@@ -1,0 +1,338 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CLASSES GLOBAIS DO SITE */
+.centerObject {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*CLASSES DO MENU*/
+
+.centerOneLine {
+    padding-top: 18px
+}
+
+.centerTwoLines {
+    padding-top: 10px;
+}
+
+.centerThreeLines {
+    padding-top: 2px;
+}
+
+.menu {
+    background-color: #000000;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li {
+    width: 100%;
+    height: 60px;
+    margin: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu ul li:hover {
+    background-color: #5F9EA0;
+    border-radius: 3px;
+}
+
+.sub-menu1, .sub-menu2 {
+    display: none;
+}
+
+.menu ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+.menu ul li:hover .align-margin {
+    margin-top: 14px;
+}
+
+.menu ul li:hover .align-margin2 {
+    margin-top: 24px;
+}
+
+.menu ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu1 ul li {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .width ul li {
+    width: 170px;
+}
+
+.menu ul li ul li:hover .sub-menu2 {
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    margin-top: -30px;
+    background-color: #000000;
+}
+
+.menu .fa {
+    margin-right: 8px;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+
+/*.menuContainer ul li:hover .sub-menu1 ul li a:hover {
+    color: aqua;
+}*/
+/*CLASSES DO MENU*/
+
+
+
+/*CLASSES GLOBAIS*/
+
+p{
+    font-family: arial;
+    font-size: 25px;
+    
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 3px;
+    
+    color: #ffffff;
+    
+    line-height: 1.5;
+    
+    text-align: justify;
+}
+
+h1{
+    font-family: "Times new roman";
+    font-size: 30px;
+    
+    padding-left: 5px;
+    
+    line-height: 1.5;
+    
+    color: white;
+    
+    text-align: center;
+    
+    border-bottom: solid 2px #5F9EA0;
+    border-top: solid 2px #5F9EA0;
+}
+
+h2{
+    width: 100%;
+    font-family: "Times new roman";
+    font-size: 28px;
+    
+    padding-left: 5px;
+    padding-top: 3px;
+    
+    line-height: 1.5;
+    
+    border-bottom: solid 2px #5F9EA0;
+    
+    text-align: center;
+    
+    color: white;
+}
+
+/*CLASSES GLOBAIS*/
+
+#caixaBasePrincipal{
+    width: 100%;
+    height: 2720px;
+    
+    border-radius: 20px 20px 20px 20px;
+    
+    background-color: black;
+    
+    float: left;
+}
+
+#logo{
+    width: 160px;
+    height: 75px;
+    margin-left: 50px;
+    float: left;
+}
+
+#logo img{
+    width: 160px;
+    height: 75px;
+    float: left;
+}
+
+#tituloPrincipal{
+    width: 100%;
+    height: 50px;
+    
+    margin-bottom: 30px;
+    
+    float: left;
+}
+
+#explicacao{
+    width: 1200px;
+    height: 100px;
+    
+    margin-left: 70px;
+    margin-bottom: 20px;
+    
+    float: left;
+}
+
+.base{
+    width: 100%;
+    height: 400px;
+    
+    padding-left: 130px;
+    
+    background-color: #5F9EA0;
+    
+    border-radius: 20px 20px 20px 20px;
+    
+    margin-bottom: 100px;
+    
+    float: left;
+}
+
+.conteudosTexto, .conteudosTexto2{
+    width: 270px;
+    height: 330px;
+    
+    margin-top: 35px;
+    margin-right: 45px;
+    
+    border-right: solid 2px black;
+    
+    float: left;
+}
+
+.conteudosTexto2{
+    width: 230px;
+    margin-right: 65px;
+    
+    padding-left: 50px;
+}
+
+.referencias{
+    width: 300px;
+    height: 40px;
+    
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    
+    float: left;
+}
+
+.imagens{
+    width: 470px;
+    height: 330px;
+    
+    margin-top: 35px;
+    margin-left: 15px;
+    
+    float: left;
+}
+
+.imagensFormulas{
+    width: 470px;
+    height: 40px;
+    
+    margin-top: 40px;
+    
+    float: left;
+}
+
+.imagensExemplos{
+    width: 470px;
+    height: 180px;
+    
+    margin-top: 70px;
+    
+    float: left;
+}
+
+.rodape {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.redes-sociais {
+    padding-top: 16px;
+    margin-left: 1020px;
+    height: 100%;
+    width: 20%;
+}
+
+.facebook, .instagram, .twitter, .whatsapp {
+    margin-left: 13px;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.redes-sociais a:active,
+.redes-sociais a:hover {
+    color: #2f3030;
+    text-decoration: none;
+    text-shadow: 4px 0px 0px rgb(95, 158, 160);
+}
+
+.redes-sociais a {
+    color: black;
+    font-size: 50px;
+    transition: text-shadow 0.5s;
+}
+
+.subirTopo {
+    text-decoration: none;
+    bottom: 38px;
+    right: 30px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    position: fixed;
+    border: 0;
+    border-radius: 100%;
+    }
+    
+    .subirTopo:hover {
+    color: #5f9ea0;
+    opacity: 10;
+    }

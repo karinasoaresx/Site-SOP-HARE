@@ -1,0 +1,492 @@
+<html>
+    <head>
+        <title>
+            Formatação de Células
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css7/styleFormatacaoCelulas.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/18e2f18084.js" crossorigin="anonymous"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/topos.js"></script>
+    </head>
+    <body>
+        <div id="caixaBasePrincipal">
+
+                <!--Menus-->
+                <div class="menu">
+                <div id="logo">
+                    <img src="imagens/logoPrincipal2.PNG">
+                </div>
+                <ul>
+                    <li class="active centerOneLine"><a href="index.html"><i class="fa fa-home"></i> Home </a></li>
+                    <li class="centerThreeLines"><a href="arquitetura.html"> Arquitetura dos Sistemas Operacionais</a>
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="arquitetura.html#explicacao"> Definição </a></li>
+                                <li><a href="historico.html"> Histórico </a></li>
+                                <li><a href="arquitetura.html#classificacao"> Classificação </a></li>
+                                <li><a href="arquitetura.html#gerenciador"> Gerenciador de processos </a></li>
+                                <li><a href="arquitetura.html#sistema"> Sistemas de arquivos </a></li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="centerTwoLines hover-so"><a href="#"> Sistema Operacional </a>
+                        <div class="sub-menu1 align-margin">
+                            <ul>
+                                <li><a href="sofechado.html"> Código fechado <i class="fa fa-angle-right"></i></a>
+                                    <div class="sub-menu2 width">
+                                        <ul>
+                                            <li><a href="sofechado.html"> Definição </a></li>
+                                            <li><a href="sofechado.html#titulo-linha-de-comando"> Modo texto </a></li>
+                                            <li><a href="sofechado.html#modo-grafico-fechado"> Modo gráfico </a></li>
+                                            <li><a href="sofechado.html#virtualbox-cp"> Instalação na máquina virtual  </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="soaberto.html"> Código aberto <i class="fa fa-angle-right"></i></a>
+                                <div class="sub-menu2 width">
+                                        <ul>
+                                            <li><a href="soaberto.html"> Definição </a></li>
+                                            <li><a href="soaberto.html#titulo-linha-de-comando"> Modo texto </a></li>
+                                            <li><a href="soaberto.html#titulo-modog-aberto"> Modo gráfico </a></li>
+                                            <li><a href="soaberto.html#niveis"> Níveis de execução </a></li>
+                                            <li><a href="soaberto.html#virtualbox"> Instalação na máquina virtual  </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="centerOneLine"><a href="#"> Editor de Texto </a>
+                        <div class="sub-menu1 align-margin2">
+                            <ul>
+                                <li><a href="formatacao.html"> Formatação </a></li>
+                                <li><a href="insercao.html"> Inserção </a></li>
+                                <li><a href="verif-impress.html#verificacao-ortografia"> Verificação de ortografia </a></li>
+                                <li><a href="verif-impress.html#impressao-arquivos"> Impressão de arquivos </a></li>
+                            </ul>
+                        </div>
+                    </li>                       
+                    <li class="centerOneLine"><a href="#"> Planilha Eletrônica </a>
+                        <div class="sub-menu1 align-margin2">
+                            <ul>
+                                <li><a href="planilha.html"> Criação de planilha </a></li>
+                                <li><a href="formatacaoCelulas.html"> Formatação de células </a></li>
+                                <li><a href="entrada.html"> Entrada de dados </a></li>
+                                <li><a href="funcoes.html"> Funções </a></li>
+                                <li><a href="graficos.html"> Criação de gráficos  </a></li>
+                                <li><a href="impressao.html"> Impressão </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Explicação sobre a Formatação de células-->
+            <div id="tituloPrincipal">
+                 <h1>
+                    Formatação de Células
+                </h1>
+            </div>
+            <div id="sobre">
+                <p class="texto">
+                    Nesta página mostraremos aulgumas formatações mais usadas em planilhas. Elas são importantíssimas para os detaques dos principais dados de sua planilha, assim deixando mais fácil a localização dos elementos.
+                </p>
+                
+                <p class="texto">
+                    É importante ressaltarmos que, além de destacadas, planilhas bem organizada e bem projetadas atraem muita atenção.
+                </p>
+                
+                <br>
+                
+                <p class="texto">
+                    Primeiramente, selecione a célula desejada e a opção "Formatar células".
+                </p>
+                
+                <div id="imagemFormatar">
+                    <img src="imagens7/opcao1.PNG">
+                </div>
+            </div>
+
+            <!--Exemplos de formatações-->
+            
+            <!--Primeira linha de exemplos de formatações-->
+            <div class="baseAzul">
+                
+                <!--Primeiro exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Geral
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/geral.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Uma opção padrão de cada célula. Os dados aparecerão do mesmo modo que foram escritos.
+                        </p>
+                        <p class="texto">
+                            Ou seja, caso você queira que um número apareça com (.) ou (,), ele aparecerá.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <!--Segundo exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Número
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/numero.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Nesta aba você pode definir quantas casas decimais o número terá, como os negativos serão representados e se deseja usar separador de 1000(.).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Segunda linha de exemplos de formatações-->
+            <div class="basePreto">
+                
+                <!--Terceiro exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Moeda
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/moeda.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Aqui você pode definir o cifrão de sua célula. O padrão pré definido é o real (R$) mas é possível alterar para, por exemplo, o dólar ($).
+                        </p>
+                    </div>
+                </div>
+
+                <!--Quarto exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Contábil
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/contabil.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            A formatação contábil, além de definir o cifrão, alinha os conteúdos (valores e cifrões) em colunas, facilitando o trabalho da empresa.
+                        </p>    
+                    </div>
+                </div>
+            </div>
+
+            <!--Terceira linha de exemplos de formatações-->
+            <div class="baseAzul">
+                
+                <!--Quinto exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Data
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/data.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Aqui você pode definir o formato que a data será exibida, ou seja, se o dia vem primeiro, o mês, até mesmo o ano, ou se é escrita por extenso.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <!--Sexto exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Hora
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/hora.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Assim como na data, aqui definimos se aparecerão os segundos, PM ou AM e, além disso, temos a opção de exibir a data juntamente com o horário.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Quarta linha de exemplos de formatações-->
+            <div class="basePreto">
+                
+                <!--Sétimo exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Porcentagem
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/porcentagem.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Nesta aba, você pode definir se sua célula receberá o símbolo de porcentagem (%) e quantas casas decimais serão exibidas.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <!--Oitavo exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Fração
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/fracao.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Esta formatação é usada para definir a exibição das frações, ou seja, se você quer que ela seja exibida no máximo 1 dígito, 2, 3, em metades, quartos, dezesseis avos e assim por diante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Quinta linha de exemplos de formatações-->
+            <div class="baseAzul">
+                
+                <!--Nono exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Científico
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/cientifico.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Aqui você tem a possibilidade de usar a forma científica (exponencial) na célula selecionada, indicando a base e seu expoente.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <!--Décimo exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Texto
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/texto.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Esta seleção é usada para quando a célula conter textos e números sem formatações especiais.
+                        </p>
+                        <p class="texto">
+                            O conteúdo aparecerá da forma que foi digitado, sem interferências.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sexta linha de exemplos de formatações-->
+            <div class="basePreto">
+                
+                <!--Décimo primeiro exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Alinhamento
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/alinhamento.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Aqui podemos alinhar o texto (esquerda, centro[...]), como será apresentado (horizontal/vertical), controle da célula caso exceda o tamanho, até mesmo a direção do texto.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <!--Décimo segundo exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Fonte
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/fonte.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            É possível alterarmos a coloração, estilo (negrito, itálico, sublinhado), tipo de fonte (Verdana, Times new Roman), tamanho (15, 30, etc).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Sétima linha de exemplos de formatações-->
+            <div class="baseAzul">
+                
+                <!--Décimo terceiro exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Linha
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/linha.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Para que você destaque e deixe bem visível cada elemento, é importante a utilização da linha. Você pode alterar a cor, estilo e expessura.
+                        </p>
+                    </div>
+                </div>
+                
+                <!--Décimo quarto exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Bordas
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/borda.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Usamos essa formatação para colocarmos bordas nas células, assim dando um melhor design. 
+                        </p>
+                        
+                        <p class="texto">
+                            Temos a possibilidade de alterar a cor, estilo de borda e expessura.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Oitava linha de exemplos de formatações-->
+            <div class="basePreto">
+                <!--Décimo terceiro exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Mesclar
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/mesclar.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Quando escrevemos uma palavra/frase extensa, temos a possibilidade de unir duas células, podendo ou não centralizar o conteúdo delas.
+                        </p>
+                    </div>
+                </div>
+                
+                <!--Décimo quarto exemplo de formatação-->
+                <div class="formatacoes">
+                    <div class="conteudo">
+                        <h2>
+                            Fundo
+                        </h2>
+                        
+                        <div class="imagem">
+                            <img src="imagens7/corFundo.PNG">
+                        </div>
+                    </div>
+                    
+                    <div class="conteudoTexto">
+                        <p class="texto">
+                            Para quando quisermos colorir o fundo de alguma células.
+                        </p>
+                        
+                        <p class="texto">
+                            Essa coloração é importante para que haja destaque entre elementos secundários e principais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Rodapé-->
+            <div class="rodape">
+                <div class="redes-sociais">
+                    <div class="facebook">
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="instagram">
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                    <div class="twitter">
+                        <a target="_blank" href="https://twitter.com/login"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <div class="whatsapp">
+                        <a target="_blank" href="WHATSAPP/index.html"><i class="fab fa-whatsapp-square"></i></a>
+                    </div>
+                </div>
+	       </div>
+
+            <!--Botão subir pro topo-->
+            <a class="subirTopo">
+                <i class="far fa-arrow-alt-circle-up"></i>
+            </a>
+    </body>
+</html>

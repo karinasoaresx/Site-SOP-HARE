@@ -1,0 +1,1083 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+/* CLASSES GLOBAIS DO SITE */
+.centerObject {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerOneLine {
+    padding-top: 18px
+}
+
+.centerTwoLines {
+    padding-top: 10px;
+}
+
+.centerThreeLines {
+    padding-top: 2px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 12px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+#header {
+    background-image: url(../imagens/imagem1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin-top: 75px;
+}
+
+
+/* ESTILIZAÇÃO DO MENU */
+#logo{
+    width: 160px;
+    height: 75px;
+    margin-left: 50px;
+    float: left;
+}
+
+#logo img{
+    width: 160px;
+    height: 75px;
+    float: left;
+}
+
+.menu {
+    background-color: black;
+    text-align: center;
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li {
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu ul li:hover {
+    background-color: #5f9ea0;
+    border-radius: 3px;
+}
+
+.sub-menu1, .sub-menu2 {
+    display: none;
+}
+
+.menu ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.menu ul li:hover .align-margin {
+    margin-top: 11px;
+}
+
+.menu ul li:hover .align-margin2 {
+    margin-top: 20px;
+}
+
+.menu ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu1 ul li {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .width ul li {
+    width: 170px;
+}
+
+.menu ul li ul li:hover .sub-menu2 {
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    margin-top: -30px;
+    background-color: black;
+}
+
+.menu .fa {
+    margin-right: 8px;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+/*.menuContainer ul li:hover .sub-menu1 ul li a:hover {
+    color: aqua;
+}*/
+
+/* ESTILIZAÇÃO BOTÃO VOLTAR AO TOPO */
+.subirTopo {
+    text-decoration: none;
+    bottom: 80px;
+    right: 20px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    position: fixed;
+    border: 0;
+    border-radius: 100%;
+    opacity: .4;
+}
+
+.subirTopo:hover {
+    opacity: 10;
+}
+
+/* ESTILIZAÇÃO DA PAGINA PRINCIPAL */
+.conteudo {
+    background-color: firebrick;
+    width: 100%;
+    height: 1500px;
+}
+
+#explicacao-site {
+    padding-top: 30px;
+    background-color: black;
+    height: 500px;
+    width: 100%;
+}
+
+#titulo-explicacao, #titulo-cdg-aberto, #titulo-linha-de-comando, #titulo-modog-aberto, #titulo-niveis, #titulo-virtualbox, #titulo-cdg-fechado, #titulo-modog-fechado, #titulo-verificacao, #titulo-impressao {
+    color: white;
+    border-bottom: 1px solid #5f9ea0;
+    border-top: 1px solid #5f9ea0;
+    padding: 5px;
+    width: 100%;
+    height: 70px;
+}
+
+#titulo-cdg-aberto, #titulo-niveis, #titulo-virtualbox, #titulo-cdg-fechado {
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+
+#titulo-linha-de-comando {
+    margin-bottom: 20px;
+}
+
+#imagem-explicacao {
+    background-image: url(../imagens/imagem-explicacao.png);
+    background-size: cover;
+    background-color: fuchsia;
+    margin-top: 40px;
+    margin-left: 150px;
+    height: 320px;
+    width: 350px;
+    float: left;
+}
+
+#texto-explicacao {
+    width: 550px;
+    height: 250px;
+    padding-top: 40px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-right: 150px;
+    margin-top: 75px;
+    float: right;
+}
+
+#texto-explicacao p {
+    color: white;
+    font-size: 25px;
+    text-align: justify;
+}
+
+#links {
+    background-color: #5f9ea0;;
+    padding-top: 10px;
+    width: 100%;
+    height: 920px;
+}
+
+.link-pg2, .link-pg3, .link-pg4, .link-pg5, .link-pg6 {
+    height: 100px;
+    width: 700px;
+}
+
+.imagem-pg2, .imagem-pg3, .imagem-pg4, .imagem-pg5, .imagem-pg6 {
+    background-color: deeppink;
+    height: 100%;
+    width: 100px;
+    float: left;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-image: url(../imagens/arquitetura.jpg);
+    background-size: cover;
+}
+
+.imagem-pg3 {
+    background-image: url(../imagens/windows.png);
+}
+
+.imagem-pg4 {
+    background-image: url(../imagens/linux.png);
+}
+
+.imagem-pg5 {
+    background-image: url(../imagens/word.png);
+}
+
+.imagem-pg6 {
+    background-image: url(../imagens/excel.png);
+}
+
+.texto-pg2, .texto-pg3, .texto-pg4, .texto-pg5, .texto-pg6 {
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    height: 80px;;
+    width: 550px;
+    float: right;
+}
+
+.texto-pg4, .texto-pg5, .texto-pg6 {
+    padding-top: 20px;
+}
+
+/* ESTILIZAÇÃO BOTÃO */
+.botao-pag2, .botao-pag3, .botao-pag4, .botao-pag5, .botao-pag6 {
+  margin-top: 60px;
+  width: 710px;
+  padding: 5px;
+  cursor: pointer;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.botao-pag2:hover, .botao-pag3:hover, .botao-pag4:hover, .botao-pag5:hover, .botao-pag6:hover {
+ background-color: #487678;
+ 
+}
+
+.botao-pag2:active, .botao-pag3:active, .botao-pag4:active, .botao-pag5:active, .botao-pag6:active {
+  background-color: #487678;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* ESTILIZAÇÃO PAGINA SOBRE CODIGO ABERTO E FECHADO */
+.conteudo-cdg, .conteudo-cdg-fechado {
+    background-color: #5f9ea0;
+    padding-top: 10px;
+    width: 100%;
+    height: 10700px;
+    padding-top: 90px;
+}
+
+.conteudo-cdg-fechado {
+    height: 9190px;
+}
+
+#nesta-pagina, #nesta-pagina-cp {
+    background-color: darkturquoise;
+    width: 350px;
+    height: 300px;
+    float: right;
+    margin-right: 25px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+#nesta-pagina-cp {
+    height: 280px;
+}
+
+.item-lista {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.item-lista li a {
+    color: black;
+}
+
+.item-lista li a:hover, .subitens-lista li a:hover {
+    color: white;
+}
+
+.subitens-lista {
+    list-style: none;
+    margin-left: 10px;
+}
+
+#definicao-cdg-aberto, #definicao-vbox, #definicao-cdg-fechado {
+    margin-top: 20px;
+    width: 900px;
+    height: 80px;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* ESTILIZAÇÃO MODO TEXTO */
+#linha-de-comando, #linha-de-comando-cp {
+    background-color: black;
+    margin-top: 20px;
+    height: 1960px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#linha-de-comando-cp {
+    height: 2700px;
+}
+
+.navegar-diretorios, .criar-diretorios, .excluir-diretorios, .renomear-diretorios, .movimentar-diretorios, .copiar-diretorios, .editar-arquivos, .navegar-diretorios1, .criar-diretorios1, .excluir-diretorios1, .renomear-diretorios1, .movimentar-diretorios1, .copiar-diretorios1, .editar-diretorios1 {
+    border-bottom: 1px solid #5f9ea0;
+    padding-top: 10px;
+    margin-bottom: 12px;
+    margin-left: 25px;
+    width: 900px;
+    height: 280px;
+    float: left;
+}
+
+.navegar-diretorios {
+    height: 150px;
+}
+
+.navegar-diretorios1 {
+    height: 170px;
+}
+
+.criar-diretorios {
+    height: 230px;
+}
+
+.criar-diretorios1 {
+    height: 380px;
+}
+
+.excluir-diretorios {
+    height: 260px;
+}
+
+.excluir-diretorios1 {
+    height: 370px;
+}
+
+.renomear-diretorios {
+    height: 230px;
+}
+
+.renomear-diretorios1 {
+    height: 400px;
+}
+
+.movimentar-diretorios {
+    height: 260px;
+}
+
+.movimentar-diretorios1 {
+    height: 450px;
+}
+
+.copiar-diretorios {
+    height: 230px;
+}
+
+.copiar-diretorios1 {
+    height: 400px;
+}
+
+.editar-arquivos {
+    height: 400px;
+    width: 1000px;
+}
+
+.editar-diretorios1 {
+    height: 300px;
+}
+
+.titulo-navegar-diretorios, .titulo-criar-diretorios, .titulo-excluir-diretorios, .titulo-renomear-diretorios, .titulo-movimentar-diretorios, .titulo-copiar-diretorios, .titulo-editar-arquivos,.titulo-editar-diretorios {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    width: 500px;
+    height: 30px;
+}
+
+.comando-navegar-diretorios, .comando-criar-diretorios, .comando-excluir-diretorios, .comando-renomear-diretorios, .comando-movimentar-diretorios, .comando-copiar-diretorios, .comando-editar-arquivos, .comando-editar-diretorios {
+    color: white;
+    padding-left: 5px;
+    padding-top: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 600px;
+    height: 40px;
+}
+
+.exemplo-navegar-diretorios, .exemplo-navegar-diretorios1 {
+    margin-top: 10px;
+    width: 282px;
+    height: 36px;
+}
+
+.exemplo-navegar-diretorios1 {
+    width: 298px;
+    height: 51px;
+}
+
+.exemplo-criar-diretorios, .exemplo-criar-diretorios1 {
+    margin-top: 10px;
+    width: 304px;
+    height: 114px;
+}
+
+.exemplo-criar-diretorios1 {
+    width: 497px;
+    height: 263px;
+}
+
+.exemplo-excluir-diretorios, .exemplo-excluir-diretorios1 {
+    margin-top: 10px;
+    width: 249px;
+    height: 146px;
+}
+
+.exemplo-excluir-diretorios1 {
+    width: 495px;
+    height: 245px;
+}
+
+.exemplo-renomear-diretorios, .exemplo-renomear-diretorios1 {
+    margin-top: 10px;
+    width: 316px;
+    height: 115px;
+}
+
+.exemplo-renomear-diretorios1 {
+    width: 501px;
+    height: 282px;
+}
+
+.exemplo-movimentar-diretorios, .exemplo-movimentar-diretorios1 {
+    margin-top: 10px;
+    width: 387px;
+    height: 149px;
+}
+
+.exemplo-movimentar-diretorios1 {
+    width: 304px;
+    height: 329px;
+}
+
+.exemplo-copiar-diretorios, .exemplo-copiar-diretorios1 {
+    margin-top: 10px;
+    width: 800px;
+    height: 113px;
+}
+
+.exemplo-copiar-diretorios1 {
+    width: 495px;
+    height: 283px;
+}
+
+.exemplo-editar-arquivos, .exemplo-editar-diretorios1 {
+    margin-top: 10px;
+    width: 910px;
+    height: 280px;
+}
+
+.exemplo-editar-diretorios1 {
+    width: 590px;
+    height: 189px;
+}
+
+.explicacao-edit-arq {
+    text-align: justify;
+    padding: 5px;
+    height: 60px;
+    width: 190px;
+    color: white;
+}
+
+.edit1 {
+    margin-top: 40px;
+    width: 242px;
+}
+
+.edit2 {
+    margin-top: -123px;
+    width: 661px;
+    height: 280px;
+    float: right;
+}
+
+/* ESTILIZAÇÃO MODO GRAFICO */
+#modo-grafico, #modo-grafico-fechado {
+    background-color: black;
+    width: 100%;
+    height: 6700px;
+}
+
+#modo-grafico-fechado {
+    height: 5750px;
+}
+
+#area-trabalho, #trabalho-janelas, #config-sistema, #config-sistema1, #ferramentas-sistema, #acessorios, #menu-ajuda, #gerenciar-arquivos, #usuarios-permissoes, #ferramentassistema, #acessorios-cp, #gerenciararquivos, #usuarios-permissoes1 {
+    background-color: #5f9ea0;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 900px;
+    height: 1000px;
+}
+
+#usuarios-permissoes1 {
+    height: 1000px;
+}
+
+#gerenciararquivos {
+    height: 940px;
+}
+
+#acessorios-cp {
+    height: 650px;
+}
+
+#config-sistema1 {
+    height: 350px;
+}
+
+#area-trabalho {
+    height: 970px;
+}
+
+#trabalho-janelas {
+    height: 310px;
+}
+
+#usuarios-permissoes {
+    height: 1100;
+}
+
+#ferramentas-sistema {
+    height: 940px;
+}
+
+#ferramentassistema {
+    height: 700px;
+}
+
+#acessorios {
+    height: 510px;
+}
+
+#menu-ajuda {
+    height: 500px;
+}
+
+#gerenciar-arquivos {
+    height: 1010px;
+}
+
+.titulo-area-trabalho, .titulo-janelas, .titulo-config, .titulo-ferramentas, .titulo-acessorios, .titulo-ajuda, .titulo-arquivos, .titulo-usuarios-permissoes {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    width: 500px;
+    height: 30px;
+}
+
+.subtitulo-usuarios, .subtitulo-permissoes {
+    color: white;
+    margin-top: 10px;
+    padding: 7px;
+    width: 200px;
+    height: 30px;
+}
+
+.comando-area-trabalho1, .comando-area-trabalho2, .comando-janelas1, .comando-janelas2, .comando-config1, .comando-config2, .comando-ferramentas1, .comando-ferramentas2, .comando-acessorios, .comando-acessorios1, .comando-acessorios2, .comando-ajuda, .comando-ajuda1, .comando-ajuda2, .comando-arquivos1, .comando-arquivos2, .comando-usuarios, .comando-permissoes {
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 700px;
+    height: 60px;
+}
+
+.comando-janelas1, .comando-janelas2, .comando-ferramentas2 {
+    padding: 5px;
+}
+
+.comando-ferramentas1 {
+    height: 50px;
+}
+
+.comando-ferramentas2 {
+    height: 45px;
+}
+
+.comando-acessorios {
+    height: 35px;
+}
+
+.comando-ajuda {
+    height: 35px;
+}
+
+.exemplo-area-trabalho1, .exemplo-area-trabalho1-cp, .exemplo-area-trabalho2, .exemplo-area-trabalho2-cp, .exemplo-janelas1, .exemplo-janelas2, .exemplojanelas2, .exemplojanelas1, .exemplo-config, .exemplo-config1, .exemplo-ferramentas1, .exemplo-ferramentas2, .exemplo-ferramentas, .exemplo-acessorios, .exemplo-acessorios1, .exemplo-acessorios2, .exemplo-ajuda, .exemplo-ajuda1, .exemplo-ajuda2, .exemplo-arquivos1, .exemplo-arquivos2, .exemplo-usuarios, .exemplo-permissoes, .exemploacessorios, .exemploajuda1, .exemploarquivos2, .exemplousuarios {
+    margin-top: 10px;
+    width: 700px;
+    height: 400px;
+}
+
+.exemplousuarios {
+    height: 301px;
+    width: 638px;
+}
+
+.exemploarquivos2 {
+    width: 468px;
+    height: 316px;
+}
+
+.exemploajuda1 {
+    width: 500px;
+    height: 360px;
+}
+
+.exemploajuda1 img {
+    height: 360px;
+    width: 500px;
+}
+
+.exemploacessorios {
+    height: 507px;
+    width: 253px;
+}
+
+.exemplo-area-trabalho1 {
+    height: 381px;
+    width: 507px;
+}
+
+.exemplo-area-trabalho1-cp {
+    height: 381px;
+    width: 431px;
+}
+
+.exemplo-area-trabalho1 img {
+    height: 381px;
+    width: 507px;
+}
+
+.exemplo-area-trabalho2, .exemplo-area-trabalho2-cp {
+    height: 370px;
+}
+
+.exemplo-area-trabalho2-cp img {
+    height: 370px;
+    width: 700px;
+}
+
+.exemplo-janelas1 {
+    width: 514px;
+    height: 49px;
+}
+
+.exemplojanelas1 {
+    width: 544px;
+    height: 40px;
+}
+
+.exemplo-janelas2 {
+    width: 127px;
+    height: 55px;
+}
+
+.exemplojanelas2 {
+    width: 140px;
+    height: 43px;
+}
+
+.exemplo-config {
+    height: 850px;
+    width: 583px;
+}
+
+.exemplo-config1 {
+    width: 549px;
+    height: 201px;
+}
+
+.exemplo-ferramentas {
+    height: 103px;
+    width: 264px;
+}
+
+.exemplo-ferramentas1 {
+    width: 700px;
+    height: 354px;
+}
+
+.exemplo-ferramentas2 img {
+    width: 700px;
+    height: 400px;
+}
+
+.exemplo-acessorios {
+    width: 630px;
+    height: 400px;
+}
+
+.exemplo-ajuda {
+    width: 630px;
+    height: 390px;
+}
+
+.exemplo-arquivos1 img {
+    width: 700px;
+    height: 400px;
+}
+
+.exemplo-arquivos2 {
+    width: 252px;
+}
+
+.exemplo-arquivos2 img {
+    height: 400px;
+}
+
+/* ESTILIZAÇÃO NIVEIS */
+#niveis {
+    background-color: #5f9ea0;
+    padding-top: 10px;
+    height: 560px;
+    width: 100%;
+}
+
+.explicacao-niveis {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 100px;
+    margin-left: 25px;
+    height: 300px;
+    width: 600px;
+    float: left;
+}
+
+.explicacao-niveis p {
+    padding-bottom: 15px;
+}
+
+.conteudo-execucao {
+    margin-top: 35px;
+    margin-right: 25px;
+    height: 408px;
+    width: 647px;
+    float: right;
+}
+
+/* ESTILIZAÇÃO MAQUINA VIRTUAL */
+#virtualbox, #virtualbox-cp {
+    background-color: #5f9ea0;
+    width: 100%;
+    height: 1200px;
+}
+
+#virtualbox-cp {
+    padding-top: 10px;
+}
+
+#definicao-vbox {
+    padding: 15px;
+}
+
+.botao-vbox {
+    background-color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.botao-vbox:hover {
+    background-color: #5f9ea0;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px #000000;
+}
+
+.botao-vbox h3 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#pacotes {
+    background-color: black;
+    padding-top: 20px;
+    margin-top: 30px;
+    width: 900px;
+    height: 420px
+}
+
+.titulo-pacotes {
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 40px;
+}
+
+.comando-pacotes {
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 600px;
+    height: 60px;
+}
+
+.exemplo-pacotes {
+    width: 563px;
+    height: 260px;
+}
+
+#atualizacao {
+    background-color: black;
+    margin-top: 40px;
+    padding-top: 10px;
+    height: 400px;
+    width: 900px;
+}
+
+.titulo-atualizacao {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    height: 35px;
+}
+
+.texto-atualizacao {
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 55px;
+    width: 600px;
+}
+
+.versao-4, .versao-5, .versao-6 {
+    height: 260px;
+    width: 250px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 37px;
+}
+
+.versao-5 {
+    height: 200px;
+}
+
+.versao-6 {
+    height: 140px;
+}
+
+.botaov4, .botaov5, .botaov6 {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    background-color: #5f9ea0;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+}
+
+.botaov4:hover, .botaov5:hover, .botaov6:hover {
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px #ffffff;
+    width: 250px;
+    height: 45px;
+    padding-top: 12px;
+    transition: .5s;
+}
+
+/* ESTILIZAÇÃO VERIFICAÇÃO DE ORTOGRAFIA E IMPRESSÃO DE ARQUIVOS */
+.conteudo-verif-impress {
+    background-color: red;
+    height: 1450px;
+    width: 100%;
+}
+
+
+#verificacao-ortografia, #impressao-arquivos {
+    padding-top: 20px;
+    background-color: black;
+    width: 100%;
+}
+
+#conteudo-impressao {
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+}
+
+#conteudo-verificacao {
+    margin-top: 20px;
+    width: 100%;
+    height: 550px;
+}
+
+
+.conteudo-left, .conteudo-center, .conteudo-right {
+    margin-left: 38px;
+    margin-top: 24px;
+    height: 555px;
+    width: 400px;
+    float: left;
+}
+
+.conteudo-esquerda, .conteudo-centro, .conteudo-direita {
+    margin-left: 38px;
+    margin-top: 24px;
+    height: 500px;
+    width: 400px;
+    float: left;
+}
+
+.texto-left, .texto-center, .texto-right, .texto-impressao {
+    background-color: #5f9ea0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px;
+    height: 60px;
+}
+
+.imagem-left, .imagem-center, .imagem-right {
+    padding-left: 17px;
+    width: 100%;
+    height: 495px;
+}
+
+.image-left, .image-center, .image-right {
+    padding-left: 17px;
+    width: 100%;
+    height: 440px;
+}
+
+.imagem-center {
+    padding-left: 125px;
+}
+
+.imagem-right {
+    padding-left: 40px;
+}
+
+.image-left {
+    padding-left: 32px;
+}
+
+.image-center {
+    padding-left: 75px;
+}
+
+.image-right {
+    padding-left: 30px;
+}
+
+/* ESTILIZAÇÃO DO RODAPE */
+.rodape {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.redes-sociais {
+    padding-top: 16px;
+    margin-left: 1050px;
+    height: 100%;
+    width: 20%;
+}
+
+.facebook, .instagram, .twitter, .whatsapp {
+    margin-left: 13px;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.redes-sociais a:active,
+.redes-sociais a:hover {
+    color: #2f3030;
+    text-decoration: none;
+    text-shadow: 4px 0px 0px rgb(95, 158, 160);
+}
+
+.redes-sociais a {
+    color: black;
+    font-size: 50px;
+    transition: text-shadow 0.5s;
+}
+
+
+
+

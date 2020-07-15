@@ -1,0 +1,443 @@
+<html>
+    <head>
+    <title> Kalelura: Sistema operacional de código fechado </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- IMPORTAR ARQUIVO JQUERY -->
+    <script src="js/jquery.js"></script>
+    <script src="js/ancora.js"></script>
+    <script src="js/topo.js"></script>
+    <script src="https://kit.fontawesome.com/18e2f18084.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+<!-- PARTE DO MENU -->
+            <div class="menu">
+                <div id="logo">
+                    <img src="imagens/logoPrincipal2.PNG">
+                </div>
+                <ul>
+                    <li class="active centerOneLine"><a href="index.html"><i class="fa fa-home"></i> Home </a></li>
+                    <li class="centerThreeLines"><a href="arquitetura.html"> Arquitetura dos Sistemas Operacionais</a>
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="arquitetura.html#explicacao"> Definição </a></li>
+                                <li><a href="historico.html"> Histórico </a></li>
+                                <li><a href="arquitetura.html#classificacao"> Classificação </a></li>
+                                <li><a href="arquitetura.html#gerenciador"> Gerenciador de processos </a></li>
+                                <li><a href="arquitetura.html#sistema"> Sistemas de arquivos </a></li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="centerTwoLines hover-so"><a href="#"> Sistema Operacional </a>
+                        <div class="sub-menu1 align-margin">
+                            <ul>
+                                <li><a href="sofechado.html"> Código fechado <i class="fa fa-angle-right"></i></a>
+                                    <div class="sub-menu2 width">
+                                        <ul>
+                                            <li><a href="sofechado.html"> Definição </a></li>
+                                            <li><a href="sofechado.html#titulo-linha-de-comando"> Modo texto </a></li>
+                                            <li><a href="sofechado.html#modo-grafico-fechado"> Modo gráfico </a></li>
+                                            <li><a href="sofechado.html#virtualbox-cp"> Instalação na máquina virtual  </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="soaberto.html"> Código aberto <i class="fa fa-angle-right"></i></a>
+                                <div class="sub-menu2 width">
+                                        <ul>
+                                            <li><a href="soaberto.html"> Definição </a></li>
+                                            <li><a href="soaberto.html#titulo-linha-de-comando"> Modo texto </a></li>
+                                            <li><a href="soaberto.html#titulo-modog-aberto"> Modo gráfico </a></li>
+                                            <li><a href="soaberto.html#niveis"> Níveis de execução </a></li>
+                                            <li><a href="soaberto.html#virtualbox"> Instalação na máquina virtual  </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="centerOneLine"><a href="#"> Editor de Texto </a>
+                        <div class="sub-menu1 align-margin2">
+                            <ul>
+                                <li><a href="formatacao.html"> Formatação </a></li>
+                                <li><a href="insercao.html"> Inserção </a></li>
+                                <li><a href="verif-impress.html#verificacao-ortografia"> Verificação de ortografia </a></li>
+                                <li><a href="verif-impress.html#impressao-arquivos"> Impressão de arquivos </a></li>
+                            </ul>
+                        </div>
+                    </li>                       
+                    <li class="centerOneLine"><a href="#"> Planilha Eletrônica </a>
+                        <div class="sub-menu1 align-margin2">
+                            <ul>
+                                <li><a href="planilha.html"> Criação de planilha </a></li>
+                                <li><a href="formatacaoCelulas.html"> Formatação de células </a></li>
+                                <li><a href="entrada.html"> Entrada de dados </a></li>
+                                <li><a href="funcoes.html"> Funções </a></li>
+                                <li><a href="graficos.html"> Criação de gráficos  </a></li>
+                                <li><a href="impressao.html"> Impressão </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+<!-- BOTÃO VOLTAR AO TOPO -->
+        <a class="subirTopo">
+            <i class="far fa-arrow-alt-circle-up"></i>
+        </a>
+
+<!--    PARTE DO CONTEUDO    -->
+        <div class="conteudo-cdg-fechado">
+            <div id="explicacao-cdg-fechado">
+                <div id="titulo-cdg-fechado">
+                    <h1> O que é um Sistema Operacional de código fechado? </h1>
+                </div>
+                <div id="definicao-cdg-fechado" class="centerObject">
+                    <p>
+                        Os softwares de código fechado, ou Closed Source, são os sistemas amplamente usados pelos fabricantes de programas, onde o acesso aos códigos é restringido, podendo ser acessado ou alterado apenas por pessoas previamente autorizadas, como os programadores.
+                    </p>
+                </div>
+            </div>  
+            <div id="linha-de-comando-cp">
+                <div id="titulo-linha-de-comando">
+                    <h1> Modo texto (linha de comando) </h1>
+                </div>
+                <div id="nesta-pagina-cp">
+                    <h3> NESTA PÁGINA </h3>
+                    <ul class="item-lista">
+                        <li><a href="#modo-grafico-fechado"> Modo gráfico (Interface gráfica): </a>
+                            <ul class="subitens-lista">
+                                <li><a href="#area-trabalho"> Área de trabalho </a></li>
+                                <li><a href="#trabalho-janelas"> Trabalho com janelas </a></li>
+                                <li><a href="#config-sistema1"> Configuração do sistema </a></li>
+                                <li><a href="#ferramentassistema"> Ferramentas do sistema </a></li>
+                                <li><a href="#acessorios-cp"> Acessórios </a></li>
+                                <li><a href="#menu-ajuda"> Menu de ajuda </a></li>
+                                <li><a href="#gerenciararquivos"> Gerenciamento de arquivos </a></li>
+                                <li><a href="#usuarios-permissoes1"> Gerenciamento de usuários e permissões </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#virtualbox-cp"> Instalação na máquina virtual</a> 
+                            <ul class="subitens-lista">
+                                <li><a href="#pacotes"> Pacotes </a></li> 
+                                <li><a href="#atualizacao"> Atualização </a></li>
+                            </ul>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="navegar-diretorios1">
+                    <div class="titulo-navegar-diretorios">
+                        NAVEGAÇÃO ENTRE DIRETÓRIOS
+                    </div>
+                    <div class="comando-navegar-diretorios">
+                        <p> Para mudar de um diretório para o outro, é utilizado o comando "cd" e logo em seguida o nome do diretório que você deseja ir. </p>
+                    </div>
+                    <div class="exemplo-navegar-diretorios1 centerObject">
+                        <img src="imagens/windows/cd.png">
+                    </div>
+                </div>
+                <div class="criar-diretorios1">
+                    <div class="titulo-criar-diretorios">
+                        CRIAÇÃO DE DIRETÓRIOS E ARQUIVOS
+                    </div>
+                    <div class="comando-criar-diretorios">
+                        <p> Para criar um diretório, é utilizado o comando "mkdir". </p>
+                        <p> Já para criar um arquivo, o comando utilizado é o "dir >". </p>
+                    </div>
+                    <div class="exemplo-criar-diretorios1 centerObject">
+                        <img src="imagens/windows/criar.PNG">
+                    </div>
+                </div>
+                <div class="excluir-diretorios1">
+                    <div class="titulo-excluir-diretorios">
+                        EXCLUSÃO DE DIRETÓRIOS E ARQUIVOS
+                    </div>
+                    <div class="comando-excluir-diretorios">
+                        <p> Para excluir um diretório, é utilizado o comando "rmdir". </p>
+                        <p> Já para excluir um arquivo, é utilizado somente o comando "del". </p>
+                    </div>
+                    <div class="exemplo-excluir-diretorios1 centerObject">
+                        <img src="imagens/windows/remove.PNG">
+                    </div>
+                </div>
+                <div class="renomear-diretorios1">
+                    <div class="titulo-renomear-diretorios">
+                        RENOMEAÇÃO DE DIRETÓRIOS E ARQUIVOS
+                    </div>
+                    <div class="comando-renomear-diretorios">
+                        <p> Para renomear tanto um diretório quanto um arquivo, é utilizado o comando "rename". </p>
+                    </div>
+                    <div class="exemplo-renomear-diretorios1 centerObject">
+                        <img src="imagens/windows/rename.PNG">
+                    </div>
+                </div>
+                <div class="movimentar-diretorios1">
+                    <div class="titulo-movimentar-diretorios">
+                        MOVIMENTAÇÃO DE DIRETÓRIOS E ARQUIVOS
+                    </div>
+                    <div class="comando-movimentar-diretorios">
+                        <p> Para mover tanto um arquivo quanto um diretório, também é utilizado o comando "move". </p>
+                    </div>
+                    <div class="exemplo-movimentar-diretorios1 centerObject">
+                        <img src="imagens/windows/move.PNG">
+                    </div>
+                </div>
+                <div class="copiar-diretorios1">
+                    <div class="titulo-copiar-diretorios">
+                        CÓPIA DE DIRETÓRIOS E ARQUIVOS
+                    </div>
+                    <div class="comando-copiar-diretorios">
+                        <p> Para copiar tanto um diretório quanto um arquivo, é utilizado o comando "xcopy". </p>
+                    </div>
+                    <div class="exemplo-copiar-diretorios1 centerObject">
+                        <img src="imagens/windows/cp-arq.PNG">
+                    </div>
+                </div>
+                <div class="editar-diretorios1">
+                    <div class="titulo-editar-diretorios">
+                        EDIÇÃO DE ARQUIVOS
+                    </div>
+                    <div class="comando-editar-diretorios">
+                        <p> Para editar um arquivo, é utilizado o comando "echo >>". </p>
+                    </div>
+                    <div class="exemplo-editar-diretorios1 centerObject">
+                        <img src="imagens/windows/edit.PNG">
+                    </div>
+                </div>
+            </div>
+            <div id="modo-grafico-fechado">
+                <div id="titulo-modog-fechado">
+                    <h1> Modo gráfico (Interface gráfica) </h1>
+                </div>
+                <div id="area-trabalho" class="centerObject">
+                    <div class="titulo-area-trabalho">
+                        ÁREA DE TRABALHO
+                    </div>
+                    <div class="comando-area-trabalho1">
+                        <p> Para adicionais itens na área de trabalho, clique com o botão direito no arquivo ou pasta, depois vá em "Enviar Para > Área de Trabalho". </p>
+                    </div>
+                    <div class="exemplo-area-trabalho1-cp centerObject">
+                        <img src="imagens/windows/area-trab.png">
+                    </div>
+                    <div class="comando-area-trabalho2">
+                        <p> Para alterar o tamanho dos ícones, clique com o botão direito na área de trabalho e vá em "Exibir". </p>
+                    </div>
+                    <div class="exemplo-area-trabalho2-cp centerObject">
+                        <img src="imagens/windows/area-trab2.png">
+                    </div>
+                </div>
+                <div id="trabalho-janelas" class="centerObject">
+                    <div class="titulo-janelas">
+                        TRABALHO COM JANELAS
+                    </div>
+                    <div class="comando-janelas1">
+                        <p> Embora o conteúdo de cada janela seja diferente, todas as janelas têm algumas coisas em comum: barra de título, botões minimizar, maximizar e fechar, barra de rolagem, bordas e cantos. </p>
+                    </div>
+                    <div class="exemplojanelas1 centerObject">
+                        <img src="imagens/windows/janela.PNG">
+                    </div>
+                    <div class="comando-janelas2">
+                        <p> Botão Minimizar <i class="far fa-window-minimize"></i> : oculta a janela. </p>
+                        <p> Botão Maximizar <i class="far fa-square"></i> : oculta a janela. </p>
+                        <p> Botão Fechar <i class="fas fa-times"></i> : oculta a janela. </p>
+                    </div>
+                    <div class="exemplojanelas2 centerObject">
+                        <img src="imagens/windows/janela2.PNG">
+                    </div>
+                </div>
+                <div id="config-sistema1" class="centerObject">
+                    <div class="titulo-config">
+                        CONFIGURAÇÃO DO SISTEMA
+                    </div>
+                    <div class="comando-config1">
+                        <p> Para abrir as configurações do sistema, clique no ícone do Windows, depois vá em "Configurações". Após isso, vai ser aberta uma nova guia. Vá em "Sistema" </p>
+                    </div>
+                    <div class="exemplo-config1 centerObject">
+                        <img src="imagens/windows/config.png">
+                    </div>
+                </div>
+                <div id="ferramentassistema" class="centerObject">
+                    <div class="titulo-ferramentas">
+                        FERRAMENTAS DO SISTEMA
+                    </div>
+                    <div class="comando-ferramentas1">
+                        <p> O Windows 10 permite a criação de mais de uma Área de Trabalho, ideal para quem precisa emprestar o computador por algum tempo e não quer criar um usuário convidado. </p>
+                    </div>
+                    <div class="exemplo-ferramentas centerObject">
+                        <img src="imagens/windows/tools1.png">
+                    </div>
+                    <div class="comando-ferramentas2">
+                        <p> Com o Agendador de Tarefas, ferramenta disponível no Windows desde a versão 95, você pode organizar a sua rotina na frente do computador. </p>
+                    </div>
+                    <div class="exemplo-ferramentas2 centerObject">
+                        <img src="imagens/windows/tools3.PNG">
+                    </div>
+                </div>
+                <div id="acessorios-cp" class="centerObject">
+                    <div class="titulo-acessorios">
+                        ACESSÓRIOS
+                    </div>
+                    <div class="comando-acessorios1">
+                        <p> Para acessar os acessórios disponíveis, clique no ícone do Windows e vá em "Acessórios do Windows". </p>
+                    </div>
+                    <div class="exemploacessorios centerObject">
+                        <img src="imagens/windows/acessorios.png">
+                    </div>
+                </div>
+                <div id="menu-ajuda" class="centerObject">
+                    <div class="titulo-ajuda">
+                        MENU DE AJUDA
+                    </div>
+                    <div class="comando-ajuda1">
+                        <p> Para abrir o menu de ajuda, clique no ícone "<i class="fas fa-search"></i>" no canto esquerdo da tela e digite uma frase para pesquisar. </p>
+                    </div>
+                    <div class="exemploajuda1 centerObject">
+                        <img src="imagens/windows/menu-ajuda.png">
+                    </div>
+                </div>
+                <div id="gerenciararquivos" class="centerObject">
+                    <div class="titulo-arquivos">
+                        GERENCIAMENTO DE ARQUIVOS
+                    </div>
+                    <div class="comando-arquivos1">
+                        <p> O gerenciador de arquivos do Ubuntu tem por função principal visualizar os arquivos que existem no computador. </p>
+                    </div>
+                    <div class="exemplo-arquivos1 centerObject">
+                        <img src="imagens/windows/geren-arq.PNG">
+                    </div>
+                    <div class="comando-arquivos2">
+                        <p> Outro botão importante é o que permite visualizar os arquivos de maneira diferente. Existem diversas formas de organizar arquivos e pastas. </p>
+                    </div>
+                    <div class="exemploarquivos2 centerObject">
+                        <img src="imagens/windows/geren-arq2.png">
+                    </div>
+                </div>
+                <div id="usuarios-permissoes1" class="centerObject">
+                    <div class="titulo-usuarios-permissoes">
+                        GERENCIAMENTO DE USUÁRIOS E PERMISSÕES
+                    </div>
+                    <div class="subtitulo-usuarios">
+                        USUÁRIOS
+                    </div>
+                    <div class="comando-usuarios">
+                        <p> Para criar um usuário, vá na barra de pesquisa do Windows e digite "usuário". Clique na opção representada abaixo e em seguida crie o usuário. </p>
+                    </div>
+                    <div class="exemplousuarios centerObject">
+                        <img src="imagens/windows/user.png">
+                    </div>
+                    <div class="subtitulo-permissoes">
+                        PERMISSÕES
+                    </div>
+                    <div class="comando-permissoes">
+                        <p> Para alterar as permissões de um arquivo ou pasta, clique com o botão direito e vá em "Propriedades". Um nova aba será aberta, clique em "Segurança > Editar". </p>
+                    </div>
+                    <div class="exemplo-permissoes centerObject">
+                        <img src="imagens/windows/permissoes.png">
+                    </div>
+                </div>
+            </div>
+            <div id="virtualbox-cp">
+                <div id="titulo-virtualbox">
+                    <h1> VirtualBox </h1>
+                </div>
+                <div id="definicao-vbox" class="centerObject">
+                    <p> O VirtualBox é um programa de virtualização da Oracle que permite instalar e executar diferentes sistemas operacionais em um único computador sem complicações.  </p>
+                </div>
+                    <a href="Manual-VirtualBox.pdf" target="_blank"> 
+                        <div class="botao-vbox centerObject">
+                            <h3> Manual VirtualBox </h3>
+                        </div>
+                    </a>    
+                <div id="pacotes" class="centerObject">
+                    <div class="titulo-pacotes">
+                        PACOTES
+                    </div>
+                    <div class="comando-pacotes">
+                        <p> Para instalar um pacote no Linux, digite "apt install" ou "apt-get install", sem as aspas. </p>
+                    </div>
+                    <div class="exemplo-pacotes centerObject">
+                        <img src="imagens/windows/install.png">
+                    </div>
+                </div>
+                <div id="atualizacao" class="centerObject">
+                    <div class="titulo-atualizacao">
+                        ATUALIZAÇÃO
+                    </div>
+                    <div class="texto-atualizacao">
+                        <p> O VirtualBox já passou por várias versões. </p>
+                        <p>Confira nos links abaixo o que mudou. </p>
+                    </div>
+                    <div class="versao-4">
+                        <a href="https://www.virtualbox.org/wiki/Changelog-4.0" target="_blank">
+                            <div class="botaov4 centerObject">
+                                <h3> VirtualBox Versão 4.0 </h3>
+                            </div>
+                        </a>
+                        <a href="https://www.virtualbox.org/wiki/Changelog-4.1" target="_blank">
+                            <div class="botaov4 centerObject">
+                                <h3> VirtualBox Versão 4.1 </h3>
+                            </div>
+                        </a>    
+                        <a href="https://www.virtualbox.org/wiki/Changelog-4.2" target="_blank">    
+                            <div class="botaov4 centerObject">
+                                <h3> VirtualBox Versão 4.2 </h3>
+                            </div>
+                        </a>    
+                        <a href="https://www.virtualbox.org/wiki/Changelog-4.3" target="_blank">    
+                            <div class="botaov4 centerObject">
+                                <h3> VirtualBox Versão 4.3 </h3>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="versao-5">
+                        <a href="https://www.virtualbox.org/wiki/Changelog-5.0" target="_blank">
+                            <div class="botaov5 centerObject">
+                                <h3> VirtualBox Versão 5.0 </h3>
+                            </div>
+                        </a>    
+                        <a href="https://www.virtualbox.org/wiki/Changelog-5.1" target="_blank">    
+                            <div class="botaov5 centerObject">
+                                <h3> VirtualBox Versão 5.1 </h3>
+                            </div>
+                        </a>    
+                        <a href="https://www.virtualbox.org/wiki/Changelog-5.2" target="_blank">    
+                            <div class="botaov5 centerObject">
+                                <h3> VirtualBox Versão 5.2 </h3>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="versao-6">
+                        <a href="https://www.virtualbox.org/wiki/Changelog-6.0" target="_blank">
+                            <div class="botaov6 centerObject">
+                                <h3> VirtualBox Versão 6.0 </h3>
+                            </div>
+                        </a>
+                        <a href="https://www.virtualbox.org/wiki/Changelog" target="_blank">
+                            <div class="botaov6 centerObject">
+                                <h3> VirtualBox Versão 6.1 </h3>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+
+<!--     PARTE DO RODAPE       -->
+            <div class="rodape">
+                <div class="redes-sociais">
+                    <div class="facebook">
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="instagram">
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                    <div class="twitter">
+                        <a target="_blank" href="https://twitter.com/login"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <div class="whatsapp">
+                        <a target="_blank" href="WHATSAPP/index.html"><i class="fab fa-whatsapp-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

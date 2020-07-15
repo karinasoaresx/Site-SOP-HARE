@@ -1,0 +1,401 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+/* CLASSES GLOBAIS DO SITE */
+.centerObject {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerOneLine {
+    padding-top: 18px
+}
+
+.centerTwoLines {
+    padding-top: 10px;
+}
+
+.centerThreeLines {
+    padding-top: 2px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 12px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* ESTILIZAÇÃO DO MENU */
+.menu {
+    background-color: black;
+    text-align: center;
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li {
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu ul li:hover {
+    background-color: #5f9ea0;
+    border-radius: 3px;
+}
+
+.sub-menu1, .sub-menu2 {
+    display: none;
+}
+
+.menu ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.menu ul li:hover .align-margin {
+    margin-top: 11px;
+}
+
+.menu ul li:hover .align-margin2 {
+    margin-top: 20px;
+}
+
+.menu ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu1 ul li {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .width ul li {
+    width: 170px;
+}
+
+.menu ul li ul li:hover .sub-menu2 {
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    margin-top: -30px;
+    background-color: black;
+}
+
+.menu .fa {
+    margin-right: 8px;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+#logo{
+    width: 160px;
+    height: 75px;
+    margin-left: 50px;
+    float: left;
+}
+
+#logo img{
+    width: 160px;
+    height: 75px;
+    float: left;
+}
+
+.conteudo-entrada {
+    background-color: #5f9ea0;
+    height: 1820px;
+    width: 100%;
+    padding-top: 90px;
+}
+
+#titulo-entrada {
+    color: white;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 5px;
+    width: 100%;
+    height: 70px;
+}
+
+#numeros {
+    background-color: black;
+    height: 700px;
+    width: 95%;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.conteudo {
+    background-color: #5f9ea0;
+    height: 80px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.imagem-numero {
+    width: 124px;
+    height: 68px;
+    margin-top: 20px;
+}
+
+.conteudo-tipos {
+    background-color: #5f9ea0;
+    height: 100px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.imagem-tipos {
+    width: 157px;
+    height: 99px;
+    margin-top: 20px;
+}
+
+.conteudo-tipos2 {
+    background-color: #5f9ea0;
+    height: 80px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.imagem-tipos2 {
+    width: 252px;
+    height: 498px;
+    margin-top: 20px;
+}
+
+.conteudo-resultado {
+    background-color: #5f9ea0;
+    height: 60px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.imagem-resultado {
+    width: 122px;
+    height: 67px;
+    margin-top: 20px;
+}
+
+#texto {
+    background-color: black;
+    height: 350px;
+    width: 95%;
+    padding-top: 20px;
+}
+
+.conteudo-texto {
+    background-color: #5f9ea0;
+    height: 80px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.imagem-texto {
+    width: 187px;
+    height: 104px;
+    margin-top: 20px;
+}
+
+.conteudo-fonte {
+    background-color: #5f9ea0;
+    height: 130px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.imagem-fonte {
+    width: 224px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.conteudo-align {
+    background-color: #5f9ea0;
+    height: 110px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.imagem-align {
+    width: 132px;
+    height: 75px;
+    margin-top: 20px;
+}
+
+.conteudo-resultado1 {
+    background-color: #5f9ea0;
+    height: 80px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.imagem-resultado1 {
+    width: 245px;
+    height: 146px;
+    margin-top: 20px;
+}
+
+#formula {
+    background-color: black;
+    height: 600px;
+    width: 95%;
+    padding-top: 20px;
+}
+
+.conteudo-exemplo {
+    background-color: #5f9ea0;
+    height: 150px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+
+.imagem-exemplo {
+    width: 223px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.conteudo-formulas {
+    background-color: #5f9ea0;
+    height: 30px;
+    width: 650px;
+    float: left;
+    padding: 5px;
+    margin-left: 40px;
+    margin-bottom: 200px;
+}
+
+.imagem-formulas {
+    width: 618px;
+    height: 104px;
+    margin-top: 20px;
+}
+
+.conteudo-soma {
+    background-color: #5f9ea0;
+    height: 130px;
+    width: 350px;
+    float: left;
+    padding: 5px;
+    margin-left: -140px;
+}
+
+.imagem-soma {
+    width: 317px;
+    height: 71px;
+    margin-top: 20px;
+}
+
+.conteudo-resultado2 {
+    background-color: #5f9ea0;
+    height: 80px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-left: 40px;
+}
+
+.imagem-resultado2 {
+    width: 223px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+/* ESTILIZAÇÃO DO RODAPE */
+.rodape {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.redes-sociais {
+    padding-top: 16px;
+    margin-left: 1050px;
+    height: 100%;
+    width: 20%;
+}
+
+.facebook, .instagram, .twitter, .whatsapp {
+    margin-left: 13px;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.redes-sociais a:active,
+.redes-sociais a:hover {
+    color: #2f3030;
+    text-decoration: none;
+    text-shadow: 4px 0px 0px rgb(95, 158, 160);
+}
+
+.redes-sociais a {
+    color: black;
+    font-size: 50px;
+    transition: text-shadow 0.5s;
+}

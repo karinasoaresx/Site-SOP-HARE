@@ -1,0 +1,479 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CLASSES GLOBAIS DO SITE */
+.centerObject {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*CLASSES DO MENU*/
+
+.centerOneLine {
+    padding-top: 18px
+}
+
+.centerTwoLines {
+    padding-top: 10px;
+}
+
+.centerThreeLines {
+    padding-top: 2px;
+}
+
+.menu {
+    background-color: #000000;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li {
+    width: 100%;
+    height: 60px;
+    margin: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu ul li:hover {
+    background-color: #5F9EA0;
+    border-radius: 3px;
+}
+
+.sub-menu1, .sub-menu2 {
+    display: none;
+}
+
+.menu ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+.menu ul li:hover .align-margin {
+    margin-top: 14px;
+}
+
+.menu ul li:hover .align-margin2 {
+    margin-top: 24px;
+}
+
+.menu ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu1 ul li {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .width ul li {
+    width: 170px;
+}
+
+.menu ul li ul li:hover .sub-menu2 {
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    margin-top: -30px;
+    background-color: #000000;
+}
+
+.menu .fa {
+    margin-right: 8px;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+
+/*.menuContainer ul li:hover .sub-menu1 ul li a:hover {
+    color: aqua;
+}*/
+/*CLASSES DO MENU*/
+
+/*CLASSES GLOBAIS*/
+.texto {
+    font-family: arial;
+    font-size: 25px;
+    
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+    
+    color: white;
+    
+    line-height: 1.5;
+    
+    text-align: justify;
+}
+
+h1{
+    font-family: "Times new roman";
+    font-size: 30px;
+    
+    padding-left: 5px;
+    
+    line-height: 1.5;
+    
+    color: white;
+    
+    text-align: center;
+    
+    border-bottom: solid 2px #5F9EA0;
+    border-top: solid 2px #5F9EA0;
+}
+
+h2{
+    font-family: "Times new roman";
+    font-size: 25px;
+    
+    padding-left: 5px;
+    padding-top: 5px;
+    
+    line-height: 1.5;
+    
+    text-align: center;
+    
+    color: white;
+}
+
+.imagensLogos{
+    width: 85px;
+    height: 80px;
+    
+    background-size: cover;
+}
+
+.icones{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*CLASSES GLOBAIS*/
+
+#caixaBasePrincipal{
+    width: 100%;
+    height: 1949px;
+    
+    background-color: #000000;
+    
+    float: left;
+}
+
+#logo{
+    width: 160px;
+    height: 75px;
+    margin-left: 50px;
+    float: left;
+}
+
+#logo img{
+    width: 160px;
+    height: 75px;
+    float: left;
+}
+
+.sobre{
+    width: 100%;
+    height: 330px;
+    
+    margin-bottom: 20px;
+    
+    padding-left: 100px;
+    
+    background-color: black;
+    
+    float: left;
+}
+
+#sobreTexto{
+    width: 660px;
+    height: 240px;
+    
+    margin-top: 50px;
+    margin-right: 130px;
+    
+    padding-top: 20px;
+    
+    float: left;
+}
+
+#imagem{
+    width: 270px;
+    height: 240px;
+    
+    margin-top: 50px;
+    
+    float: left;
+}
+
+#imagem img{
+    width: 270px;
+    height: 240px;
+}
+
+#interacao{
+    width: 1060px;
+    height: 200px;
+    
+    margin-top: 15px;
+    
+    float: left;
+}
+
+#passosContexto{
+    width: 1130px;
+    height: 430px;
+    
+    margin-left: 100px;
+    margin-bottom: 20px;
+    
+    background-color: black;
+    
+    border: solid 2px #5F9EA0;
+    
+    float: left;
+}
+
+.passos{
+    width: 290px;
+    height: 410px;
+    
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 5px;
+    
+    float: left;
+}
+
+#passo2{
+    width: 385px;
+    height: 410px;
+    
+    margin-top: 5px;
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    border-right: solid 2px #5F9EA0;
+    border-left: solid 2px #5F9EA0;
+    
+    float: left;
+}
+
+.imagensPassos{
+    width: 276px;
+    height: 170px;
+    
+    margin-top: 37px;
+    
+    float: left;
+}
+
+.imagensPassos img{
+    width: 287px;
+    height: 170px;
+    
+    float: left;
+}
+
+#imagemPasso2{
+    width: 276px;
+    height: 170px;
+    
+    margin-top: 37px;
+    margin-left: 10px;
+    
+    float: left;
+}
+
+#imagemPasso2 img{
+    width: 287px;
+    height: 170px;
+    
+    float: left;
+}
+
+#caminhosTutoriais{
+    width: 1100px;
+    height: 125px;
+    
+    margin-left: 110px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    
+    float: left;
+}
+
+#caminhoTutoriais p{
+    width: 100%;
+    height: 35px;
+    
+    text-align: center;
+    line-height: 1.8;
+    
+    float: left;
+}
+
+#caixaBase{
+    width: 100%;
+    height: 450px;
+    
+    margin-bottom: 17px;
+    
+    background-color: black;
+    
+    float: left;
+}
+
+#caminhoUm, #caminhoDois{
+    width: 300px;
+    height: 150px;
+    
+    margin-top: 70px;
+    margin-right: 50px;
+    margin-left: 370px;
+    margin-bottom: 40px;
+    
+    background-image: url(../imagens/formatacaoDeCelulas.PNG);
+    
+    background-color: RGBA (255, 255, 255, 0.5);
+    
+    float: left;
+}
+
+#caminhoDois{
+    margin-left: 25px;
+    
+    background-image: url(../imagens/entradaDeDados.PNG);
+}
+
+#caminhoTres, #caminhoQuatro, #caminhoCinco{
+    width: 300px;
+    height: 150px;
+    
+    margin-left: 200px;
+    
+    background-image: url(../imagens/funcoes.jpg);
+    
+    text-align: center;
+    
+    float: left;
+}
+
+#caminhoQuatro{
+    margin-left: 60px;
+    
+    background-image: url(../imagens/criacaoGraficos.png);
+}
+
+#caminhoCinco{
+    margin-left: 60px;
+    
+    background-image: url(../imagens/impressao.PNG);
+}
+
+#caminhoUm:hover, #caminhoDois:hover, #caminhoTres:hover, #caminhoQuatro:hover, #caminhoCinco:hover{
+    cursor: pointer;
+}
+
+#caminhoUmTexto p, #caminhoDoisTexto p, #caminhoTresTexto p, #caminhoQuatroTexto p, #caminhoCincoTexto p{
+    width: 300px;
+    height: 150px;
+    
+    text-align: center;
+    
+    padding-top: 30px;
+    
+    color: #2d6263;
+    
+    font-weight:550;
+    
+    background-color: RGBA(255, 255, 255, 0.5);
+}
+
+#caminhoDoisTexto p, #caminhoTresTexto p, #caminhoQuatroTexto p, #caminhoCincoTexto p{
+    padding-top: 60px;
+}
+
+#rodape {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.rodape {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.redes-sociais {
+    padding-top: 16px;
+    margin-left: 1020px;
+    height: 100%;
+    width: 20%;
+}
+
+.facebook, .instagram, .twitter, .whatsapp {
+    margin-left: 13px;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.redes-sociais a:active,
+.redes-sociais a:hover {
+    color: #2f3030;
+    text-decoration: none;
+    text-shadow: 4px 0px 0px rgb(95, 158, 160);
+}
+
+.redes-sociais a {
+    color: black;
+    font-size: 50px;
+    transition: text-shadow 0.5s;
+}
+
+.subirTopo {
+    text-decoration: none;
+    bottom: 10px;
+    right: 30px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    position: fixed;
+    border: 0;
+    border-radius: 100%;
+    }
+    
+    .subirTopo:hover {
+    color: #5f9ea0;
+    opacity: 10;
+    }
